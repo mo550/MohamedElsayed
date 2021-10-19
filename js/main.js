@@ -165,7 +165,7 @@ function displayMenuItems(menuItems) {
     <span></span>
     <span></span>
     <span></span>
-    <img src=${el.imageSrc} alt="Project${el.id}">
+    <img src="img/project.jpg" alt="Project${el.id}">
     <div class="project-content">
       <h3 class="project-title">${el.title}</h3>
       <a href=${el.link} target="_blank">Visit The Website</a>
@@ -272,7 +272,7 @@ window.addEventListener('DOMContentLoaded', () => {
       <h3 class="client-name">${slide.clientName}</h3>
       <q>${slide.feedback}</q>
       <div class="upwork-logo">
-        <img src="upwork-logo.png" alt="upwork-logo">
+        <img src="img/upwork-logo.png" alt="upwork-logo">
       </div>
     </div>`
   }).join("");
