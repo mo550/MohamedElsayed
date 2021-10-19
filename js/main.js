@@ -60,16 +60,6 @@ themeButtons.forEach((color) => {
 });
 /** ------------------------------------------------------------------ **/
 
-// /** Buttons Ripples Effect Functionality **/
-// const allBtns = document.querySelectorAll('.btn');
-// allBtns.forEach((btn) => {
-//   btn.addEventListener('click', function(e) {
-//     let x = e.clientX - e.target.offsetLeft;
-//     let y = e.clientY - e.target.offsetTop;
-//   });
-// });
-// /** ------------------------------------------------------------------ **/
-
 /** Progress Animation **/
 const skillSection = document.getElementById('skills');
 const progressBar = document.querySelectorAll('.progress-bar span');
@@ -159,6 +149,8 @@ const menu = [
   },
 ];
 
+const menuContainer = document.querySelector('.menu-container');
+
 window.addEventListener('DOMContentLoaded', function() {
   // Triggering Menu Items
   displayMenuItems(menu);
@@ -179,10 +171,10 @@ function displayMenuItems(menuItems) {
       <a href=${el.link} target="_blank">Visit The Website</a>
     </div>
     </div>`
-  }).join("");
+  });
   
   // Appending Created MenuItems To Menu Container
-  const menuContainer = document.querySelector('.menu-container');
+  displayMenu = displayMenu.join("");
   menuContainer.innerHTML = displayMenu;
 }
 
@@ -241,34 +233,27 @@ const sliderTxt = [
   {
     id: 1,
     clientName: 'Damon C.',
-    clientImage: '../img/man.png',
     feedback: `Mohamed did an exceptional job. He communicated perfectly and delivered all work quickly and exactly to specifications. He has excellent technical capabilities. Thanks Mohamed. We look forward to working with you in the future.`,
-    upworkLogo: '../img/upwork-logo.png',
   },
   {
     id: 2,
     clientName: 'Nikhil P.',
-    clientImage: '../img/man.png',
     feedback: `It was a pleasure to work with Mohamed. He is knowledgeable and always helpful. Really easy to work with, a wonderful experience!`,
-    upworkLogo: '../img/upwork-logo.png',
   },
   {
     id: 3,
     clientName: 'Nikhil P.',
-    clientImage: '../img/man.png',
     feedback: `A real pleasure working with this freelancer. Understood requirements clearly and worked really quickly in producing exactly what we wanted. Attention to detail and was always available for any changes.`,
-    upworkLogo: '../img/upwork-logo.png',
   },
   {
     id: 4,
     clientName: 'Nada A.',
-    clientImage: '../img/man.png',
     feedback: `I'm happy to work with you, you have a high skill in development, for sure I will work with you again if I need anything related to this subject :)`,
-    upworkLogo: '../img/upwork-logo.png',
   },
 ];
 let nextBtn = document.getElementById('nextBtn');
 let prevBtn = document.getElementById('prevBtn');
+let sliderContainer = document.querySelector('.slider-container');
 
 window.addEventListener('DOMContentLoaded', () => {
   // Displaying Each Slides
@@ -276,7 +261,7 @@ window.addEventListener('DOMContentLoaded', () => {
     return `
     <div class="slide">
       <span class="quote"><i class="fas fa-quote-right"></i></span>
-      <img class="client-img" src=${slide.clientImage} alt="Client">
+      <img class="client-img" src="img/man.png" alt="Client">
       <div class="stars">
         <i class="fas fa-star"></i>
         <i class="fas fa-star"></i>
@@ -287,13 +272,12 @@ window.addEventListener('DOMContentLoaded', () => {
       <h3 class="client-name">${slide.clientName}</h3>
       <q>${slide.feedback}</q>
       <div class="upwork-logo">
-        <img src=${slide.upworkLogo} alt="upwork-logo">
+        <img src="upwork-logo.png" alt="upwork-logo">
       </div>
     </div>`
   }).join("");
 
   // Appending All Slides To Slider Container
-  let sliderContainer = document.querySelector('.slider-container');
   sliderContainer.innerHTML = slideContent;
 
   // Moving Each Slide By index * 100
