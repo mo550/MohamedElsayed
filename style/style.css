@@ -416,11 +416,6 @@ svg polyline {
   place-items: center;
   background-image: url(../img/home.jpg);
   background-size: cover;
-  -webkit-background-attachment: fixed;
-  -moz-background-attachment: fixed;
-  -o-background-attachment: fixed;
-  -ms-background-attachment: fixed;
-  background-attachment: fixed;
 }
 .home .content {
   position: relative;
@@ -467,16 +462,11 @@ svg polyline {
 .about {
   background-image: url(../img/about.jpg);
   background-size: cover;
-  background-attachment: fixed;
-  -webkit-background-attachment: fixed;
-  -moz-background-attachment: fixed;
-  -o-background-attachment: fixed;
-  -ms-background-attachment: fixed;
   letter-spacing: 1px;
 }
-@media screen and (max-width: 767px) {  
-.about .hint {
-  left: -20px;
+@media screen and (max-width: 767px) {
+  .about .hint {
+    left: -20px;
   }
 }
 .about .container {
@@ -560,11 +550,6 @@ svg polyline {
 .services {
   background-image: url(../img/services.jpg);
   background-size: cover;
-  background-attachment: fixed;
-  -webkit-background-attachment: fixed;
-  -moz-background-attachment: fixed;
-  -o-background-attachment: fixed;
-  -ms-background-attachment: fixed;
 }
 .services .container {
   align-items: center;
@@ -655,21 +640,16 @@ svg polyline {
 .skills {
   background-image: url(../img/skills.jpg);
   background-size: cover;
-  background-attachment: fixed;
-  -webkit-background-attachment: fixed;
-  -moz-background-attachment: fixed;
-  -o-background-attachment: fixed;
-  -ms-background-attachment: fixed;
   align-items: center;
 }
 .skills .hint {
   left: -10px;
 }
-@media screen and (max-width: 767px) {  
+@media screen and (max-width: 767px) {
   .skills .hint {
     left: -30px;
-    }
   }
+}
 .skills .container {
   align-items: center;
 }
@@ -754,11 +734,6 @@ svg polyline {
 .portfolio {
   background-image: url(../img/portfolio.jpg);
   background-size: cover;
-  background-attachment: fixed;
-  -webkit-background-attachment: fixed;
-  -moz-background-attachment: fixed;
-  -o-background-attachment: fixed;
-  -ms-background-attachment: fixed;
 }
 .portfolio .container {
   justify-content: center;
@@ -770,7 +745,7 @@ svg polyline {
 .portfolio .hint {
   left: -65px;
 }
-@media screen and (max-width: 767px) {  
+@media screen and (max-width: 767px) {
   .portfolio .hint {
     left: -80px;
   }
@@ -995,9 +970,9 @@ svg polyline {
 .testimonial .hint {
   left: -52px;
 }
-@media screen and (max-width: 767px) {  
+@media screen and (max-width: 767px) {
   .testimonial .hint {
-    display: none;;
+    display: none;
   }
 }
 .testimonial .container {
@@ -1118,18 +1093,13 @@ svg polyline {
 .contact {
   background-image: url(../img/contact.jpg);
   background-size: cover;
-  background-attachment: fixed;
-  -webkit-background-attachment: fixed;
-  -moz-background-attachment: fixed;
-  -o-background-attachment: fixed;
-  -ms-background-attachment: fixed;
 }
 .contact .hint {
   left: -30px;
 }
-@media screen and (max-width: 767px) {  
+@media screen and (max-width: 767px) {
   .contact .hint {
-    display: none;;
+    display: none;
   }
 }
 .contact .sec-content {
