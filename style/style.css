@@ -414,8 +414,12 @@ svg polyline {
 .home {
   display: grid;
   place-items: center;
-  background: url(../img/home.jpg);
+  background-image: url(../img/home.jpg);
   background-size: cover;
+  -webkit-background-attachment: fixed;
+  -moz-background-attachment: fixed;
+  -o-background-attachment: fixed;
+  -ms-background-attachment: fixed;
   background-attachment: fixed;
 }
 .home .content {
@@ -464,6 +468,10 @@ svg polyline {
   background-image: url(../img/about.jpg);
   background-size: cover;
   background-attachment: fixed;
+  -webkit-background-attachment: fixed;
+  -moz-background-attachment: fixed;
+  -o-background-attachment: fixed;
+  -ms-background-attachment: fixed;
   letter-spacing: 1px;
 }
 @media screen and (max-width: 767px) {  
@@ -553,6 +561,10 @@ svg polyline {
   background-image: url(../img/services.jpg);
   background-size: cover;
   background-attachment: fixed;
+  -webkit-background-attachment: fixed;
+  -moz-background-attachment: fixed;
+  -o-background-attachment: fixed;
+  -ms-background-attachment: fixed;
 }
 .services .container {
   align-items: center;
@@ -643,6 +655,11 @@ svg polyline {
 .skills {
   background-image: url(../img/skills.jpg);
   background-size: cover;
+  background-attachment: fixed;
+  -webkit-background-attachment: fixed;
+  -moz-background-attachment: fixed;
+  -o-background-attachment: fixed;
+  -ms-background-attachment: fixed;
   align-items: center;
 }
 .skills .hint {
@@ -738,6 +755,10 @@ svg polyline {
   background-image: url(../img/portfolio.jpg);
   background-size: cover;
   background-attachment: fixed;
+  -webkit-background-attachment: fixed;
+  -moz-background-attachment: fixed;
+  -o-background-attachment: fixed;
+  -ms-background-attachment: fixed;
 }
 .portfolio .container {
   justify-content: center;
@@ -966,6 +987,10 @@ svg polyline {
   background-image: url(../img/testimonials.jpg);
   background-size: cover;
   background-attachment: fixed;
+  -webkit-background-attachment: fixed;
+  -moz-background-attachment: fixed;
+  -o-background-attachment: fixed;
+  -ms-background-attachment: fixed;
 }
 .testimonial .hint {
   left: -52px;
@@ -1094,6 +1119,10 @@ svg polyline {
   background-image: url(../img/contact.jpg);
   background-size: cover;
   background-attachment: fixed;
+  -webkit-background-attachment: fixed;
+  -moz-background-attachment: fixed;
+  -o-background-attachment: fixed;
+  -ms-background-attachment: fixed;
 }
 .contact .hint {
   left: -30px;
