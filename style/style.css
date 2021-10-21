@@ -961,11 +961,6 @@ svg polyline {
 .testimonial {
   background-image: url(../img/testimonials.jpg);
   background-size: cover;
-  background-attachment: fixed;
-  -webkit-background-attachment: fixed;
-  -moz-background-attachment: fixed;
-  -o-background-attachment: fixed;
-  -ms-background-attachment: fixed;
 }
 .testimonial .hint {
   left: -52px;
