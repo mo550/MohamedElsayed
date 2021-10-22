@@ -96,7 +96,7 @@ const menu = [
     category: "web",
     title: "Portfolio",
     link: "https://mo550.github.io/Personal-Portfolio/",
-    imageSrc: "https://i.ibb.co/hZb2XWc/project2.jpg",
+    imageSrc: "../img/project2.jpg",
   },
   {
     id: 2,
@@ -110,7 +110,7 @@ const menu = [
     category: "branding",
     title: "Kasper",
     link: "https://mo550.github.io/kasper/",
-    imageSrc: "https://i.ibb.co/L9GdsT9/gallery-04.png",
+    imageSrc: "../img/project2.jpg",
   },
   {
     id: 4,
@@ -160,17 +160,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
 function displayMenuItems(menuItems) {
   let displayMenu = menuItems.map((el) => {
-    return `<div class="project">
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-    <img src=${el.imageSrc} alt="Project${el.id}">
-    <div class="project-content">
-      <h3 class="project-title">${el.title}</h3>
-      <a href=${el.link} target="_blank">Visit The Website</a>
-    </div>
-    </div>`
+    return `<div class="card">
+      <h3 class="card-title">${el.title}</h3>
+      <a href=${el.link} class="web-link">Visit The Website</a>
+    </div>`;
   });
   
   // Appending Created MenuItems To Menu Container
