@@ -801,6 +801,7 @@ svg polyline {
 }
 .menu-container {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
 }
@@ -820,7 +821,6 @@ svg polyline {
   .menu-container {
     width: 100%;
     place-items: center;
-    justify-content: center;
   }
   .menu-btns {
     height: 40px;
