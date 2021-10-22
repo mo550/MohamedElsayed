@@ -182,8 +182,8 @@ svg polyline {
   letter-spacing: 1px;
   transition: var(--main-transition);
 }
-.navLinks li:hover > a,
-.navLinks li.active > a {
+.navLinks li > a:hover,
+.navLinks li > a.active {
   color: var(--main-color);
 }
 .copyrights {
@@ -890,6 +890,9 @@ svg polyline {
   border-radius: 30px;
   padding: 8px 20px;
   transition: var(--main-transition);
+}
+.card .preview {
+  bottom: 60px;
 }
 .web-link:hover {
   color: #FFF;

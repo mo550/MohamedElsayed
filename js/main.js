@@ -11,15 +11,23 @@ closeToggle.addEventListener('click', () => {
 });
 
 /** NavLinks Functionality **/
-const navLinks = document.querySelectorAll('.navLinks li');
+const navLinks = document.querySelectorAll('.navLinks li a');
 navLinks.forEach((el) => {
   el.onclick = function() {
     navLinks.forEach((el) => {
       el.classList.remove('active');
     });
     this.classList.add('active');
+    navigation.classList.remove('active');
   }
 });
+
+document.onkeyup = function(e) {
+  // console.log(e);
+  if(e.key === "Escape") {
+    navigation.classList.remove('active');
+  }
+}
 /** ------------------------------------------------------------------ **/
 
 /** Add Active Class On Selected NavNumber **/
@@ -154,7 +162,7 @@ function displayMenuItems(menuItems) {
   let displayMenu = menuItems.map((el) => {
     return `<div class="card">
       <h3 class="card-title">${el.title}</h3>
-      <a href=${el.link} class="web-link">Visit The Website</a>
+      <a href=${el.link} target="_blank" class="web-link">Visit The Website</a>
     </div>`;
   });
   
