@@ -99,7 +99,7 @@ svg polyline {
   width: clamp(250px, 25vw, 350px);
   height: 100%;
   color: #fff;
-  background-image: url(../img/navigation.jpg);
+  background-image: url(../img/navigation.webp);
   background-size: cover;
   padding: 90px 30px 50px;
   box-shadow: 0 0 5px 2px rgb(0, 0, 0, 0.5);
@@ -414,7 +414,7 @@ svg polyline {
 .home {
   display: grid;
   place-items: center;
-  background-image: url(../img/home.jpg);
+  background-image: url(../img/home.webp);
   background-size: cover;
 }
 .home .content {
@@ -460,7 +460,7 @@ svg polyline {
 
 /* Start About Section */
 .about {
-  background-image: url(../img/about.jpg);
+  background-image: url(../img/about.webp);
   background-size: cover;
   letter-spacing: 1px;
 }
@@ -548,7 +548,7 @@ svg polyline {
 
 /* Start Services Section */
 .services {
-  background-image: url(../img/services.jpg);
+  background-image: url(../img/services.webp);
   background-size: cover;
 }
 .services .container {
@@ -638,7 +638,7 @@ svg polyline {
 
 /* Start Skills Section */
 .skills {
-  background-image: url(../img/skills.jpg);
+  background-image: url(../img/skills.webp);
   background-size: cover;
   align-items: center;
 }
@@ -732,7 +732,7 @@ svg polyline {
 
 /* Start Portfolio Section */
 .portfolio {
-  background-image: url(../img/portfolio.jpg);
+  background-image: url(../img/portfolio.webp);
   background-size: cover;
 }
 .portfolio .container {
@@ -744,6 +744,7 @@ svg polyline {
 }
 .portfolio .hint {
   left: -65px;
+  z-index: 1000;
 }
 @media screen and (max-width: 767px) {
   .portfolio .hint {
@@ -961,7 +962,7 @@ svg polyline {
 
 /* Start Testimonial Section */
 .testimonial {
-  background-image: url(../img/testimonials.jpg);
+  background-image: url(../img/testimonials.webp);
   background-size: cover;
 }
 .testimonial .hint {
@@ -1088,7 +1089,7 @@ svg polyline {
 
 /* Start Contact Section */
 .contact {
-  background-image: url(../img/contact.jpg);
+  background-image: url(../img/contact.webp);
   background-size: cover;
 }
 .contact .hint {
