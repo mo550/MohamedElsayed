@@ -759,7 +759,7 @@ svg polyline {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 30px;
+  margin: 0 auto;
   border-bottom: 2px solid rgba(172, 172, 172, 0.5);
 }
 .filter-btn {
@@ -800,10 +800,12 @@ svg polyline {
   left: 0;
 }
 .menu-container {
+  width: 100%;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
+  margin-top: 30px;
 }
 .project {
   position: relative;
