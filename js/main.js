@@ -151,7 +151,7 @@ const menu = [
 
 const menuContainer = document.querySelector('.menu-container');
 
-window.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function() {
   // Triggering Menu Items
   displayMenuItems(menu);
   // Triggering Filter Btns

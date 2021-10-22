@@ -817,12 +817,10 @@ svg polyline {
   cursor: pointer;
 }
 @media screen and (max-width: 650px) {
-  .project {
-    height: 200px;
-  }
   .menu-container {
     width: 100%;
     place-items: center;
+    justify-content: center;
   }
   .menu-btns {
     height: 40px;
