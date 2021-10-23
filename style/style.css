@@ -73,6 +73,7 @@ svg polyline {
   z-index: 1000;
 }
 .logo img {
+  width: 50px;
   height: 45px;
 }
 .social-link {
@@ -252,6 +253,7 @@ svg polyline {
   margin-bottom: 20px;
 }
 .color-scheme .logo img {
+  width: fit-content;
   height: clamp(70px, 7vw, 110px);
   text-align: center;
 }
@@ -953,7 +955,8 @@ svg polyline {
   z-index: 2;
 }
 .upwork-logo img {
-  max-width: 80px;
+  width: 80px;
+  height: 20px;
   margin-top: 10px;
 }
 .controls {
