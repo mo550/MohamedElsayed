@@ -104,73 +104,76 @@ const menu = [
     category: "web",
     title: "Portfolio Website",
     link: "https://mo550.github.io/Personal-Portfolio/",
+    imgSrc: "../img/project1",
   },
   {
     id: 2,
     category: "graphic",
     title: "Knight Theme",
     link: "https://mo550.github.io/black-knight/",
+    imgSrc: "../img/project2",
   },
   {
     id: 3,
     category: "branding",
     title: "Kasper",
     link: "https://mo550.github.io/kasper/",
+    imgSrc: "../img/project3",
   },
   {
     id: 4,
-    category: "photography",
+    category: "agency",
     title: "Healthy Food",
     link: "https://mo550.github.io/healthyfood/",
+    imgSrc: "../img/project4",
   },
   {
     id: 5,
     category: "web",
     title: "FrontEnd Mentor",
     link: "https://mo550.github.io/fylo/",
+    imgSrc: "../img/project5",
   },
   {
     id: 6,
     category: "branding",
     title: "FrontEnd Mentor",
     link: "https://mo550.github.io/huddle/",
+    imgSrc: "../img/project6",
   },
   {
     id: 7,
     category: "web",
     title: "CV",
     link: "https://mo550.github.io/My-CV/",
+    imgSrc: "../img/project7",
   },
   {
     id: 8,
-    category: "photography",
-    title: 'Title',
-    link: "#",
+    category: "agency",
+    title: 'Leon Agency',
+    link: "https://mo550.github.io/loantemplate/",
+    imgSrc: "../img/project8",
   },
 ];
 
-const menuContainer = document.querySelector('.menu-container');
-
-document.addEventListener('DOMContentLoaded', function() {
-  // Triggering Menu Items
-  displayMenuItems(menu);
-  // Triggering Filter Btns
-  displayFilterBtns();
-});
-
+// Displaying Menu Cards
 function displayMenuItems(menuItems) {
   let displayMenu = menuItems.map((el) => {
-    return `<div class="card">
+    return `<div class="card" style="background-image: url(${el.imgSrc})">
       <h3 class="card-title">${el.title}</h3>
       <a href=${el.link} target="_blank" class="web-link">Visit The Website</a>
     </div>`;
-  });
+  }).join("");
   
   // Appending Created MenuItems To Menu Container
-  displayMenu = displayMenu.join("");
+  const menuContainer = document.querySelector('.menu-container');
   menuContainer.innerHTML = displayMenu;
-}
+};
+// Triggering The DisplayMenuItems Function
+displayMenuItems(menu);
 
+// Displaying Menu Filter Btns
 function displayFilterBtns() {
   // Filtering Menu Category To Create Filter Buttons
   let menuFilterCategory = menu.reduce(function(values, item) {
@@ -219,6 +222,9 @@ function displayFilterBtns() {
     });
   });
 };
+
+// Triggering The DisplayMenuFilterBtns Function
+displayFilterBtns();
 /** ------------------------------------------------------------------ **/
 
 /** Slider Functionality **/
@@ -248,7 +254,8 @@ let nextBtn = document.getElementById('nextBtn');
 let prevBtn = document.getElementById('prevBtn');
 let sliderContainer = document.querySelector('.slider-container');
 
-window.addEventListener('DOMContentLoaded', () => {
+// Displaying Testimonials Slide Box
+(function displaySlideBox() {
   // Displaying Each Slides
   let slideContent = sliderTxt.map((slide) => {
     return `
@@ -273,7 +280,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // Appending All Slides To Slider Container
   sliderContainer.innerHTML = slideContent;
 
-  // Moving Each Slide By index * 100
+  // Moving Each Slide To The Left By (index * 100)
   let allSlides = sliderContainer.querySelectorAll('.slide');
   allSlides.forEach(function(slide, index) {
     slide.style.left = `${index * 100}%`;
@@ -333,7 +340,19 @@ window.addEventListener('DOMContentLoaded', () => {
     li.classList.remove('active');
   });
   }
-});
+}()); // Self Invoked Function
+/** ------------------------------------------------------------------ **/
+
+/** Initialize AOS Library **/
+// (function() {
+//   AOS.init({
+//     duration: 700,
+//     offset: 200,
+//     mirror: false,
+//     once: false
+//   });
+//   window.addEventListener('load', AOS.refresh);
+// }());
 /** ------------------------------------------------------------------ **/
 
 /** Loader Functionality **/
