@@ -104,58 +104,65 @@ const menu = [
     category: "web",
     title: "Portfolio Website",
     link: "https://mo550.github.io/Personal-Portfolio/",
-    imgSrc: "../img/project1",
+    imgSrc: "img/project1",
   },
   {
     id: 2,
     category: "graphic",
     title: "Knight Theme",
     link: "https://mo550.github.io/black-knight/",
-    imgSrc: "../img/project2",
+    imgSrc: "img/project2",
   },
   {
     id: 3,
     category: "branding",
     title: "Kasper",
     link: "https://mo550.github.io/kasper/",
-    imgSrc: "../img/project3",
+    imgSrc: "img/project3",
   },
   {
     id: 4,
     category: "agency",
     title: "Healthy Food",
     link: "https://mo550.github.io/healthyfood/",
-    imgSrc: "../img/project4",
+    imgSrc: "img/project4",
   },
   {
     id: 5,
     category: "web",
     title: "FrontEnd Mentor",
     link: "https://mo550.github.io/fylo/",
-    imgSrc: "../img/project5",
+    imgSrc: "img/project5",
   },
   {
     id: 6,
     category: "branding",
     title: "FrontEnd Mentor",
     link: "https://mo550.github.io/huddle/",
-    imgSrc: "../img/project6",
+    imgSrc: "img/project6",
   },
   {
     id: 7,
     category: "web",
     title: "CV",
     link: "https://mo550.github.io/My-CV/",
-    imgSrc: "../img/project7",
+    imgSrc: "img/project7",
   },
   {
     id: 8,
     category: "agency",
     title: 'Leon Agency',
     link: "https://mo550.github.io/loantemplate/",
-    imgSrc: "../img/project8",
+    imgSrc: "img/project8",
   },
 ];
+
+window.addEventListener('DOMContentLoaded', function() {
+  // Triggering The DisplayMenuItems Function
+  displayMenuItems(menu);
+  // Triggering The DisplayMenuFilterBtns Function
+  displayFilterBtns();
+});
 
 // Displaying Menu Cards
 function displayMenuItems(menuItems) {
@@ -170,8 +177,6 @@ function displayMenuItems(menuItems) {
   const menuContainer = document.querySelector('.menu-container');
   menuContainer.innerHTML = displayMenu;
 };
-// Triggering The DisplayMenuItems Function
-displayMenuItems(menu);
 
 // Displaying Menu Filter Btns
 function displayFilterBtns() {
@@ -222,9 +227,6 @@ function displayFilterBtns() {
     });
   });
 };
-
-// Triggering The DisplayMenuFilterBtns Function
-displayFilterBtns();
 /** ------------------------------------------------------------------ **/
 
 /** Slider Functionality **/
