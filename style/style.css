@@ -253,7 +253,6 @@ svg polyline {
   margin-bottom: 20px;
 }
 .color-scheme .logo img {
-  width: fit-content;
   height: clamp(70px, 7vw, 110px);
   text-align: center;
 }
