@@ -99,8 +99,6 @@ svg polyline {
   width: clamp(250px, 25vw, 350px);
   height: 100%;
   color: #fff;
-  background-image: url(../img/navigation.webp);
-  background-size: cover;
   padding: 90px 30px 50px;
   box-shadow: 0 0 5px 2px rgb(0, 0, 0, 0.5);
   overflow: auto;
@@ -414,8 +412,6 @@ svg polyline {
 .home {
   display: grid;
   place-items: center;
-  background-image: url(../img/home.webp);
-  background-size: cover;
 }
 .home .content {
   position: relative;
@@ -459,11 +455,6 @@ svg polyline {
 /* End Home Section */
 
 /* Start About Section */
-.about {
-  background-image: url(../img/about.webp);
-  background-size: cover;
-  letter-spacing: 1px;
-}
 @media screen and (max-width: 767px) {
   .about .hint {
     left: -20px;
@@ -476,6 +467,7 @@ svg polyline {
   font-size: 18px;
   text-transform: uppercase;
   margin: 20px 0 30px;
+  letter-spacing: 1px;
 }
 .about .quality i {
   color: var(--main-color);
@@ -523,7 +515,7 @@ svg polyline {
   box-shadow: 0 0 5px 2px rgb(0, 0, 0, 0.5);
   user-select: none;
 }
-.sec-utilities h2 {
+.about .sec-utilities h2 {
   font-size: 30px;
   text-align: center;
   letter-spacing: 2px;
@@ -547,10 +539,6 @@ svg polyline {
 /* End About Section */
 
 /* Start Services Section */
-.services {
-  background-image: url(../img/services.webp);
-  background-size: cover;
-}
 .services .container {
   align-items: center;
 }
@@ -638,8 +626,6 @@ svg polyline {
 
 /* Start Skills Section */
 .skills {
-  background-image: url(../img/skills.webp);
-  background-size: cover;
   align-items: center;
 }
 .skills .hint {
@@ -731,10 +717,6 @@ svg polyline {
 /* Start Skills Section */
 
 /* Start Portfolio Section */
-.portfolio {
-  background-image: url(../img/portfolio.webp);
-  background-size: cover;
-}
 .portfolio .container {
   justify-content: center;
   align-items: flex-start;
@@ -902,10 +884,6 @@ svg polyline {
 /* End Portfolio Section */
 
 /* Start Testimonial Section */
-.testimonial {
-  background-image: url(../img/testimonials.webp);
-  background-size: cover;
-}
 .testimonial .hint {
   left: -52px;
 }
@@ -1029,10 +1007,6 @@ svg polyline {
 /* End Testimonial Section */
 
 /* Start Contact Section */
-.contact {
-  background-image: url(../img/contact.webp);
-  background-size: cover;
-}
 .contact .hint {
   left: -30px;
 }
