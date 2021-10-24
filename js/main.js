@@ -161,6 +161,13 @@ const menu = [
   },
 ];
 
+window.addEventListener('DOMContentLoaded', () => {
+  // Triggering The DisplayMenuFilterBtns Function
+  displayFilterBtns();
+  // Triggering The DisplayMenuItems Function
+  displayMenuItems(menu);
+});
+
 // Displaying Menu Cards
 function displayMenuItems(menuItems) {
   let displayMenu = menuItems
@@ -181,8 +188,6 @@ function displayMenuItems(menuItems) {
   const menuContainer = document.querySelector(".menu-container");
   menuContainer.innerHTML = displayMenu;
 }
-// Triggering The DisplayMenuItems Function
-displayMenuItems(menu);
 
 // Displaying Menu Filter Btns
 function displayFilterBtns() {
@@ -237,8 +242,6 @@ function displayFilterBtns() {
     });
   });
 }
-// Triggering The DisplayMenuFilterBtns Function
-displayFilterBtns();
 /** ------------------------------------------------------------------ **/
 
 /** Slider Functionality **/
