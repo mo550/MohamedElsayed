@@ -108,7 +108,7 @@ const menu = [
     category: "web",
     title: "Portfolio Website",
     link: "https://mo550.github.io/Personal-Portfolio/",
-    imgSrc: "img/project1",
+    imgSrc: "img/project6",
   },
   {
     id: 2,
@@ -136,7 +136,7 @@ const menu = [
     category: "web",
     title: "FrontEnd Mentor",
     link: "https://mo550.github.io/fylo/",
-    imgSrc: "img/project5",
+    imgSrc: "img/project8",
   },
   {
     id: 6,
@@ -150,7 +150,7 @@ const menu = [
     category: "web",
     title: "CV",
     link: "https://mo550.github.io/My-CV/",
-    imgSrc: "img/project7",
+    imgSrc: "img/project2",
   },
   {
     id: 8,
