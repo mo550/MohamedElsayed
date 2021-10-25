@@ -58,7 +58,17 @@ section::before {
 }
 .container {
   position: relative;
-  padding: clamp(2.5vw, 6.5vw, 10vw);
+  padding: 90px;
+}
+@media screen and (max-width: 991px) {
+  .container {
+    padding: 60px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .container {
+    padding: 30px;
+  }
 }
 svg polyline {
   stroke: var(--main-color);
@@ -81,8 +91,18 @@ svg polyline {
   height: 45px;
 }
 .social-link {
-  margin-right: clamp(10vw, 12.5vw, 20vw);
+  margin-right: 170px;
   z-index: 90;
+}
+@media screen and (max-width: 991px) {
+  .social-link {
+    margin-right: 150px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .social-link {
+    margin-right: 80px;
+  }
 }
 .social-link a {
   display: inline-block;
@@ -101,7 +121,7 @@ svg polyline {
   position: fixed;
   top: 0;
   right: 0;
-  width: clamp(250px, 25vw, 350px);
+  width: 350px;
   height: 100%;
   color: #fff;
   padding: 90px 30px 50px;
@@ -113,6 +133,16 @@ svg polyline {
 }
 .navigation.active {
   transform: translateX(0);
+}
+@media screen and (max-width: 991px) {
+  .navigation {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .navigation {
+    width: 250px;
+  }
 }
 .navigation::-webkit-scrollbar {
   width: 0;
@@ -147,10 +177,20 @@ svg polyline {
 .close-toggle {
   position: absolute;
   top: 47px;
-  right: clamp(20px, 4vw, 49px);
+  right: 50px;
   width: 25px;
   height: 25px;
   cursor: pointer;
+}
+@media screen and (max-width: 991px) {
+  .close-toggle {
+    right: 30px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .close-toggle {
+    right: 25px;
+  }
 }
 .close-toggle span {
   display: block;
@@ -220,7 +260,7 @@ svg polyline {
   position: fixed;
   top: 0;
   left: 0;
-  width: clamp(210px, 22vw, 300px);
+  width: 300px;
   height: 100vh;
   color: #fff;
   background: #201e21;
@@ -257,7 +297,7 @@ svg polyline {
   margin-bottom: 20px;
 }
 .color-scheme .logo img {
-  height: clamp(70px, 7vw, 110px);
+  height: 100px;
   text-align: center;
 }
 .theme-btn-container {
@@ -272,6 +312,22 @@ svg polyline {
   cursor: pointer;
   user-select: none;
 }
+@media screen and (max-width: 991px) {
+  .color-scheme {
+    width: 250px;
+  }
+  .color-scheme .logo img {
+    height: 90px
+  }
+}
+@media screen and (max-width: 767px) {
+  .color-scheme {
+    width: 220px;
+  }
+  .color-scheme .logo img {
+    height: 70px
+  }
+}
 /* Start Color Schems */
 
 /* Start NavPoints */
@@ -282,7 +338,7 @@ svg polyline {
   height: 100vh;
   background: transparent;
   padding-top: 40px;
-  padding-right: clamp(25px, 5vw, 50px);
+  padding-right: 50px;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -311,9 +367,17 @@ svg polyline {
 .nav-num {
   margin-bottom: 90px;
 }
+@media screen and (max-width: 991px) {
+  .nav-points {
+    padding-right: 30px;
+  }
+}
 @media screen and (max-width: 767px) {
   .nav-num {
     display: none;
+  }
+  .nav-points {
+    padding-right: 25px;
   }
 }
 .nav-num li {
@@ -430,8 +494,8 @@ svg polyline {
   color: var(--main-color);
   margin-right: 10px;
 }
-.content h1 {
-  font-size: clamp(2rem, 5vw, 4rem);
+.home .content h1 {
+  font-size: 4.5rem;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -449,6 +513,11 @@ svg polyline {
   color: #fff;
   background-color: var(--main-color);
 }
+@media screen and (max-width: 991px) {
+  .home .content h1 {
+    font-size: 3.5rem;
+  }
+}
 @media screen and (max-width: 767px) {
   .home .btn {
     display: block;
@@ -456,13 +525,16 @@ svg polyline {
   .home .btns a:nth-child(1) {
     margin-bottom: 10px;
   }
+  .home .content h1 {
+    font-size: 2.5rem;
+  }
 }
 /* End Home Section */
 
 /* Start About Section */
 @media screen and (max-width: 767px) {
   .about .hint {
-    left: -20px;
+    left: -15px;
   }
 }
 .about .container {
@@ -480,8 +552,8 @@ svg polyline {
 }
 .about-imgBx {
   position: relative;
-  width: clamp(150px, 500px, 45vw);
-  height: clamp(100px, 300px, 35vw);
+  width: 500px;
+  height: 320px;
   border-radius: 4px;
   overflow: hidden;
   cursor: pointer;
@@ -539,6 +611,16 @@ svg polyline {
   }
   .about .sec-utilities h2 {
     font-size: 22px;
+  }
+  .about-imgBx {
+    width: 420px;
+    height: 250px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .about-imgBx {
+    width: 350px;
+    height: 200px;
   }
 }
 /* End About Section */
@@ -638,7 +720,7 @@ svg polyline {
 }
 @media screen and (max-width: 767px) {
   .skills .hint {
-    left: -30px;
+    left: -25px;
   }
 }
 .skills .container {
@@ -1022,7 +1104,7 @@ svg polyline {
   }
 }
 .contact .sec-content {
-  width: 30%;
+  width: 35%;
 }
 .contact-info .infoBx {
   display: flex;
@@ -1042,7 +1124,7 @@ svg polyline {
   place-items: center;
 }
 .contact .sec-utilities {
-  width: 65%;
+  width: 60%;
   padding-top: 105px;
 }
 .infoBx .info h3 {
@@ -1235,6 +1317,11 @@ svg polyline {
   }
   100% {
     transform: translateY(10px);
+  }
+}
+@media (max-width: 767px) {
+  .scrollToTop {
+    right: 25px;
   }
 }
 /* End ScrollToTop */
