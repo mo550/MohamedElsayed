@@ -375,9 +375,10 @@ let sliderContainer = document.querySelector(".slider-container");
 /** ------------------------------------------------------------------ **/
 
 /** Loader Functionality **/
-// const loader = document.querySelector('.loader');
-
-// window.onload = function() {
-//   loader.style.display = 'none';
-// };
+const loader = document.querySelector('.loader');
+console.log(loader)
+window.addEventListener('load', () => {
+  loader.style.opacity = '0';
+  loader.style.display = 'none';
+});
 /** ------------------------------------------------------------------ **/
