@@ -382,3 +382,24 @@ window.addEventListener('load', () => {
   loader.style.display = 'none';
 });
 /** ------------------------------------------------------------------ **/
+
+/** ScrollToTopFunctionality **/
+const scrollToTop = document.getElementById('scrollToTop');
+
+window.addEventListener('scroll', () => {
+  if(window.scrollY > 700) {
+    scrollToTop.classList.add('active');
+  }
+  else {
+    scrollToTop.classList.remove('active');
+  }
+});
+
+scrollToTop.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: 'smooth',
+  });
+});
+/** ------------------------------------------------------------------ **/
