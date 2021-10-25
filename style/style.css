@@ -243,7 +243,7 @@ svg polyline {
   border-radius: 0 5px 5px 0;
   cursor: pointer;
 }
-.switcher-btn i {
+.switcher-btn svg {
   margin-top: 2px;
   animation: rotate 2s infinite linear;
 }
@@ -358,7 +358,7 @@ svg polyline {
   text-transform: uppercase;
   letter-spacing: 2px;
 }
-.hint i {
+.hint svg {
   color: var(--main-color);
   margin-right: 10px;
 }
@@ -373,7 +373,7 @@ svg polyline {
   margin-bottom: 5px;
   text-transform: uppercase;
 }
-.sub-heading i {
+.sub-heading svg {
   color: var(--main-color);
   margin-right: 10px;
 }
@@ -426,7 +426,7 @@ svg polyline {
   text-transform: uppercase;
   letter-spacing: 1px;
 }
-.content h3 i {
+.content h3 svg {
   color: var(--main-color);
   margin-right: 10px;
 }
@@ -474,7 +474,7 @@ svg polyline {
   margin: 20px 0 30px;
   letter-spacing: 1px;
 }
-.about .quality i {
+.about .quality svg {
   color: var(--main-color);
   margin-right: 10px;
 }
@@ -566,7 +566,7 @@ svg polyline {
   cursor: pointer;
   transition: all 0.3s cubic-bezier(0.38, 1.15, 0.7, 1.12);
 }
-.langBx i {
+.langBx svg {
   color: var(--main-color);
   font-size: 4.5em;
   transition: all 0.3s cubic-bezier(0.38, 1.15, 0.7, 1.12);
@@ -585,7 +585,7 @@ svg polyline {
   align-items: flex-start;
   transition: all 0.3s cubic-bezier(0.38, 1.15, 0.7, 1.12);
 }
-.langBx:hover i {
+.langBx:hover svg {
   font-size: 2em;
 }
 .langBx:hover h3 {
@@ -931,7 +931,7 @@ svg polyline {
   top: 0px;
   right: 10px;
 }
-.quote i {
+.quote svg {
   font-size: 10rem;
   color: #aebb14;
   opacity: 0.3;
