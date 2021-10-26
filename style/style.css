@@ -104,6 +104,11 @@ svg polyline {
     margin-right: 80px;
   }
 }
+@media screen and (max-width: 420px) {
+  .social-link {
+    margin-right: 40px;
+  }
+}
 .social-link a {
   display: inline-block;
   color: #fff;
@@ -526,17 +531,17 @@ svg polyline {
     margin-bottom: 10px;
   }
   .home .content h1 {
-    font-size: 2.2rem;
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 420px) {
+  .home .content h1 {
+    font-size: 2.1rem;
   }
 }
 /* End Home Section */
 
 /* Start About Section */
-@media screen and (max-width: 767px) {
-  .about .hint {
-    left: -15px;
-  }
-}
 .about .container {
   align-items: flex-start;
 }
@@ -552,7 +557,7 @@ svg polyline {
 }
 .about-imgBx {
   position: relative;
-  width: 500px;
+  width: 100%;
   height: 320px;
   border-radius: 4px;
   overflow: hidden;
@@ -618,9 +623,18 @@ svg polyline {
   }
 }
 @media screen and (max-width: 767px) {
+  .about .hint {
+    left: -15px;
+  }
   .about-imgBx {
     width: 350px;
     height: 200px;
+  }
+}
+@media screen and (max-width:420px) {
+  .about-imgBx {
+    width: 100%;
+    height: 180px;
   }
 }
 /* End About Section */
@@ -988,15 +1002,10 @@ svg polyline {
 }
 .slider-container {
   position: relative;
-  min-height: 50vh;
+  min-height: 55vh;
   padding-top: 35px;
   margin-top: 35px;
   overflow: hidden;
-}
-@media screen and (max-width: 500px) {
-  .slider-container {
-    min-height: 63vh;
-  }
 }
 .slide {
   width: 100%;
