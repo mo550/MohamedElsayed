@@ -402,3 +402,18 @@ scrollToTop.addEventListener('click', () => {
   });
 });
 /** ------------------------------------------------------------------ **/
+
+const allSection = Array.from(document.querySelectorAll('section'));
+const sectionId = allSection.map((sec) => {
+  return sec.getAttribute('id');
+});
+console.log(sectionId);
+
+const sectionTop = allSection.forEach((sec) => {
+  if(sec.scrollTop === 0) {
+    console.log(sec);
+  } else {
+    console.log('hi');
+  }
+});
+console.log(sectionTop);
