@@ -281,11 +281,11 @@ let sliderContainer = document.querySelector(".slider-container");
       <span class="quote"><i class="fas fa-quote-right"></i></span>
       <img class="client-img" src="img/man.png" alt="Client">
       <div class="stars">
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
+        <span class="icon-star-solid"></span>
+        <span class="icon-star-solid"></span>
+        <span class="icon-star-solid"></span>
+        <span class="icon-star-solid"></span>
+        <span class="icon-star-solid"></span>
       </div>
       <h3 class="client-name">${slide.clientName}</h3>
       <q>${slide.feedback}</q>
@@ -376,7 +376,6 @@ let sliderContainer = document.querySelector(".slider-container");
 
 /** Loader Functionality **/
 const loader = document.querySelector('.loader');
-console.log(loader)
 window.addEventListener('load', () => {
   loader.style.opacity = '0';
   loader.style.display = 'none';

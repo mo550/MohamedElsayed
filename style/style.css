@@ -283,8 +283,8 @@ svg polyline {
   border-radius: 0 5px 5px 0;
   cursor: pointer;
 }
-.switcher-btn svg {
-  margin-top: 2px;
+.switcher-btn span {
+  display: inline-block;
   animation: rotate 2s infinite linear;
 }
 @keyframes rotate {
@@ -422,7 +422,7 @@ svg polyline {
   text-transform: uppercase;
   letter-spacing: 2px;
 }
-.hint svg {
+.hint span {
   color: var(--main-color);
   margin-right: 10px;
 }
@@ -437,7 +437,7 @@ svg polyline {
   margin-bottom: 5px;
   text-transform: uppercase;
 }
-.sub-heading svg {
+.sub-heading span {
   color: var(--main-color);
   margin-right: 10px;
 }
@@ -490,7 +490,7 @@ svg polyline {
   text-transform: uppercase;
   letter-spacing: 1px;
 }
-.content h3 svg {
+.home .content h3 span {
   color: var(--main-color);
   margin-right: 10px;
 }
@@ -515,7 +515,7 @@ svg polyline {
 }
 @media screen and (max-width: 991px) {
   .home .content h1 {
-    font-size: 3.5rem;
+    font-size: 3.2rem;
   }
 }
 @media screen and (max-width: 767px) {
@@ -526,7 +526,7 @@ svg polyline {
     margin-bottom: 10px;
   }
   .home .content h1 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
   }
 }
 /* End Home Section */
@@ -546,7 +546,7 @@ svg polyline {
   margin: 20px 0 30px;
   letter-spacing: 1px;
 }
-.about .quality svg {
+.about .quality span {
   color: var(--main-color);
   margin-right: 10px;
 }
@@ -648,7 +648,7 @@ svg polyline {
   cursor: pointer;
   transition: all 0.3s cubic-bezier(0.38, 1.15, 0.7, 1.12);
 }
-.langBx svg {
+.langBx span {
   color: var(--main-color);
   font-size: 4.5em;
   transition: all 0.3s cubic-bezier(0.38, 1.15, 0.7, 1.12);
@@ -667,7 +667,7 @@ svg polyline {
   align-items: flex-start;
   transition: all 0.3s cubic-bezier(0.38, 1.15, 0.7, 1.12);
 }
-.langBx:hover svg {
+.langBx:hover span {
   font-size: 2em;
 }
 .langBx:hover h3 {
@@ -1013,7 +1013,7 @@ svg polyline {
   top: 0px;
   right: 10px;
 }
-.quote svg {
+.quote span {
   font-size: 10rem;
   color: #aebb14;
   opacity: 0.3;
