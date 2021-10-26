@@ -982,10 +982,15 @@ svg polyline {
 }
 .slider-container {
   position: relative;
-  min-height: 55vh;
+  min-height: 50vh;
   padding-top: 35px;
   margin-top: 35px;
   overflow: hidden;
+}
+@media screen and (max-width: 420px) {
+  .slider-container {
+    min-height: 60vh;
+  }
 }
 .slide {
   width: 100%;
