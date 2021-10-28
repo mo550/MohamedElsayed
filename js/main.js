@@ -10,7 +10,7 @@ closeToggle.addEventListener("click", () => {
   navigation.classList.remove("active");
 });
 
-// Close Menu When Click Escape Button
+// Close Navigation\ Menu When Click Escape Button
 document.onkeyup = function (e) {
   // console.log(e);
   if (e.key === "Escape") {
@@ -25,6 +25,14 @@ const navLinks = document.querySelectorAll(".navLinks li a");
 const allLis = document.querySelectorAll(".nav-num li a");
 const allSectionsLength = allSections.length;
 
+// Close Navigation Menu When Clicking Any NavLink
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    navigation.classList.remove("active");
+  });
+});
+
+// Highlighting Function
 window.addEventListener('scroll', () => {
   let scrollPosition = document.documentElement.scrollTop;
 
