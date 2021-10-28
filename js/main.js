@@ -10,8 +10,11 @@ closeToggle.addEventListener("click", () => {
   navigation.classList.remove("active");
 });
 
-/** NavLinks Functionality **/
+/** Add Active Class On Selected NavLinks & NavNumber **/
 const navLinks = document.querySelectorAll(".navLinks li a");
+const allLis = document.querySelectorAll(".nav-num li a");
+
+/* On NavLinks */
 navLinks.forEach((el) => {
   el.onclick = function () {
     navLinks.forEach((el) => {
@@ -21,18 +24,15 @@ navLinks.forEach((el) => {
     navigation.classList.remove("active");
   };
 });
-
+// Close Menu When Click Escape Button
 document.onkeyup = function (e) {
   // console.log(e);
   if (e.key === "Escape") {
     navigation.classList.remove("active");
   }
 };
-/** ------------------------------------------------------------------ **/
 
-/** Add Active Class On Selected NavNumber **/
-let allLis = document.querySelectorAll(".nav-num li");
-
+/* On NavNumbers */
 allLis.forEach((el) => {
   el.onclick = function () {
     allLis.forEach((el) => {
@@ -40,6 +40,38 @@ allLis.forEach((el) => {
     });
     this.classList.add("active");
   };
+});
+
+/** Highlights NavLinks & NavNumber When Reaching Its Section **/
+const allSections = document.querySelectorAll('section');
+const allSectionsLength = allSections.length;
+
+window.addEventListener('scroll', () => {
+  let scrollPosition = document.documentElement.scrollTop;
+
+  allSections.forEach(section => {
+    if(scrollPosition >= section.offsetTop - 150 && scrollPosition < section.offsetTop + section.offsetHeight - 500) {
+      let currentId = section.getAttribute('id');
+
+      // Highlight for NavLinks
+      navLinks.forEach(el => {
+        if(el.getAttribute('href') === `#${currentId}`) {
+          el.classList.add('active');
+        } else {
+          el.classList.remove('active');
+        }
+      });
+
+      // Highlight for NavNumber
+      allLis.forEach(li => {
+        if(li.getAttribute('href') === `#${currentId}`) {
+          li.classList.add('active');
+        } else {
+          li.classList.remove('active');
+        } 
+      });
+    }
+  });
 });
 /** ------------------------------------------------------------------ **/
 
@@ -90,7 +122,7 @@ function hideProgress() {
 
 // Trigger The Show & Hide Function
 window.addEventListener("scroll", () => {
-  if(window.scrollY >= skillSection.offsetTop - 250) {
+  if(window.scrollY >= skillSection.offsetTop - 300) {
     showProgress(); 
   } else {
     hideProgress();
@@ -400,17 +432,4 @@ scrollToTop.addEventListener('click', () => {
 });
 /** ------------------------------------------------------------------ **/
 
-const allSection = Array.from(document.querySelectorAll('section'));
-const sectionId = allSection.map((sec) => {
-  return sec.getAttribute('id');
-});
-console.log(sectionId);
 
-const sectionTop = allSection.forEach((sec) => {
-  if(sec.scrollTop === 0) {
-    console.log(sec);
-  } else {
-    console.log('hi');
-  }
-});
-console.log(sectionTop);
