@@ -20,7 +20,6 @@
   --main-transition: 0.3s;
 }
 html {
-  -webkit-overflow-scrolling: touch;
   scroll-behavior: smooth;
   overflow-y: scroll;
   /* scroll-snap-type: y mandatory; */
