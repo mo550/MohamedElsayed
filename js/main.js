@@ -10,20 +10,6 @@ closeToggle.addEventListener("click", () => {
   navigation.classList.remove("active");
 });
 
-/** Add Active Class On Selected NavLinks & NavNumber **/
-const navLinks = document.querySelectorAll(".navLinks li a");
-const allLis = document.querySelectorAll(".nav-num li a");
-
-/* On NavLinks */
-navLinks.forEach((el) => {
-  el.onclick = function () {
-    navLinks.forEach((el) => {
-      el.classList.remove("active");
-    });
-    this.classList.add("active");
-    navigation.classList.remove("active");
-  };
-});
 // Close Menu When Click Escape Button
 document.onkeyup = function (e) {
   // console.log(e);
@@ -31,19 +17,12 @@ document.onkeyup = function (e) {
     navigation.classList.remove("active");
   }
 };
-
-/* On NavNumbers */
-allLis.forEach((el) => {
-  el.onclick = function () {
-    allLis.forEach((el) => {
-      el.classList.remove("active");
-    });
-    this.classList.add("active");
-  };
-});
+/** ------------------------------------------------------------------ **/
 
 /** Highlights NavLinks & NavNumber When Reaching Its Section **/
 const allSections = document.querySelectorAll('section');
+const navLinks = document.querySelectorAll(".navLinks li a");
+const allLis = document.querySelectorAll(".nav-num li a");
 const allSectionsLength = allSections.length;
 
 window.addEventListener('scroll', () => {

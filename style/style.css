@@ -20,9 +20,10 @@
   --main-transition: 0.3s;
 }
 html {
+  -webkit-overflow-scrolling: touch;
   scroll-behavior: smooth;
-  /* scroll-snap-type: y mandatory; */
   overflow-y: scroll;
+  /* scroll-snap-type: y mandatory; */
 }
 html::-webkit-scrollbar {
   width: 0.4rem;
