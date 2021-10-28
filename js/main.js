@@ -75,14 +75,13 @@ themeButtons.forEach((color) => {
 /** Progress Animation **/
 const skillSection = document.getElementById("skills");
 const progressBar = document.querySelectorAll(".progress-bar span");
-
+const skilldcon = document.getElementById("progress-container")
 function showProgress() {
   progressBar.forEach((el) => {
     const value = el.dataset.width;
     el.style.width = `${value}%`;
   });
 }
-
 function hideProgress() {
   progressBar.forEach((el) => {
     el.style.width = `0`;
@@ -91,10 +90,8 @@ function hideProgress() {
 
 // Trigger The Show & Hide Function
 window.addEventListener("scroll", () => {
-  const sectionPos = skillSection.getBoundingClientRect().top;
-  const screenPos = window.innerHeight;
-  if (sectionPos < screenPos) {
-    showProgress();
+  if(window.scrollY >= skillSection.offsetTop - 250) {
+    showProgress(); 
   } else {
     hideProgress();
   }

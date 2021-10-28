@@ -290,6 +290,7 @@ svg polyline {
 }
 .switcher-btn span {
   display: inline-block;
+  margin-top: 2px;
   animation: rotate 2s infinite linear;
 }
 @keyframes rotate {
