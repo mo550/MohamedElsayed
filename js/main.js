@@ -71,19 +71,15 @@ switcherBtn.addEventListener("click", () => {
 });
 
 /** Color Theme Functonality **/
-const themeButtons = document.querySelectorAll(".theme-button");
+const themeColors = document.querySelectorAll(".theme-color");
 
 // Add Default Local Storage Class on Body (2)
-document
-  .querySelector(":root")
-  .style.setProperty("--main-color", localStorage.getItem("pageColor"));
+document.querySelector(":root").style.setProperty("--main-color", localStorage.getItem("pageColor"));
 
-themeButtons.forEach((color) => {
+themeColors.forEach((color) => {
   color.addEventListener("click", () => {
     let dataColor = color.getAttribute("data-color");
-    document
-      .querySelector(":root")
-      .style.setProperty("--main-color", dataColor);
+    document.querySelector(":root").style.setProperty("--main-color", dataColor);
 
     // Add Data To Local Storage (1)
     localStorage.setItem("pageColor", dataColor);
@@ -418,21 +414,3 @@ scrollToTop.addEventListener('click', () => {
   });
 });
 /** ------------------------------------------------------------------ **/
-
-/** Adding Scrolling Behaviour For IE & Safari **/
-function SmoothVerticalScrolling(e, time, where) {
-  var eTop = e.getBoundingClientRect().top;
-  var eAmt = eTop / 100;
-  var curTime = 0;
-  while (curTime <= time) {
-      window.setTimeout(SVS_B, curTime, eAmt, where);
-      curTime += time / 100;
-  }
-}
-
-function SVS_B(eAmt, where) {
-  if(where == "center" || where == "")
-      window.scrollBy(0, eAmt / 2);
-  if (where == "top")
-      window.scrollBy(0, eAmt);
-}
