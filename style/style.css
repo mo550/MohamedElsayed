@@ -36,13 +36,13 @@ html::-webkit-scrollbar-thumb {
 body {
   font-family: "Gemunu Libre", sans-serif;
   background: #333;
-  overflow-x: hidden;
 }
 section {
   position: relative;
   color: #fff;
   min-height: 100vh;
   border-bottom: 2px solid var(--main-color);
+  overflow-x: hidden;
 }
 @media screen and (min-width: 992px) {
   section {
