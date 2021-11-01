@@ -406,9 +406,9 @@ scrollToTop.addEventListener('click', () => {
 /** Initialize AOS Library **/
 (function() {
   AOS.init({
-    duration: 800,
-    offset: 300,
-    once: false
+    duration: 700,
+    offset: 200,
+    once: true
   });
   window.addEventListener('load', AOS.refresh);
 }());
