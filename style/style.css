@@ -17,12 +17,10 @@
 }
 :root {
   --main-color: #aebb14;
-  --main-transition: 0.3s;
+  --main-transition: all 0.3s;
 }
 html {
   scroll-behavior: smooth;
-  overflow-y: scroll;
-  /* scroll-snap-type: y mandatory; */
 }
 html::-webkit-scrollbar {
   width: 0.4rem;
@@ -35,7 +33,7 @@ html::-webkit-scrollbar-thumb {
 }
 body {
   font-family: "Gemunu Libre", sans-serif;
-  background: #333;
+  background: #FFF;
 }
 section {
   position: relative;
@@ -43,32 +41,13 @@ section {
   min-height: 100vh;
   border-bottom: 2px solid var(--main-color);
 }
-@media screen and (min-width: 992px) {
-  section {
-    scroll-snap-align: start;
-  }
-}
-section::before {
+.bg-cover::before {
   content: "";
   position: absolute;
   left: 0;
   width: 100%;
   height: 100%;
   background: rgb(0, 0, 0, 0.5);
-}
-.container {
-  position: relative;
-  padding: 90px;
-}
-@media screen and (max-width: 991px) {
-  .container {
-    padding: 60px;
-  }
-}
-@media screen and (max-width: 767px) {
-  .container {
-    padding: 30px;
-  }
 }
 svg polyline {
   stroke: var(--main-color);
@@ -426,6 +405,17 @@ svg polyline {
 .container {
   display: flex;
   justify-content: space-between;
+  padding: 90px;
+}
+@media screen and (max-width: 991px) {
+  .container {
+    padding: 60px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .container {
+    padding: 30px;
+  }
 }
 .hint {
   position: absolute;
@@ -493,9 +483,6 @@ svg polyline {
 .home {
   display: grid;
   place-items: center;
-}
-.home .content {
-  position: relative;
   text-align: center;
 }
 .home .content h3 {
