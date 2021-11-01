@@ -7,6 +7,8 @@
   <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
   <!-- FontAwsome File -->
   <link rel="stylesheet" href="style/font-icons.css">
+  <!-- AnimationOnScroll Style File -->
+  <link rel="stylesheet" href="style/aos.css">
   <!-- Normalize Elements File -->
   <link rel="stylesheet" href="style/normalize.css">
   <!-- Style File -->
@@ -147,8 +149,8 @@
             style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
     </picture>
     <div class="hint"><span class="icon-question-circle-regular"></span>Who i'm</div>
-    <div class="container" data-aos="fade-up">
-      <div class="sec-content">
+    <div class="container">
+      <div class="sec-content" data-aos="flip-left">
         <h3 class="heading">about me</h3>
         <svg width=65 height=30 style=background:transparent;>
           <polyline points="0 25 6.25 18.75 12.5 25 18.75 18.75 25 25 31.25 18.75 37.5 25 43.75 18.75 50 25 56.25 18.75 62.5 25" fill=none stroke-width=3px></polyline>
@@ -158,7 +160,7 @@
         <a href="#" class="btn">become my client</a>
       </div>
 
-      <div class="sec-utilities">
+      <div class="sec-utilities" data-aos="flip-right">
         <div class="about-imgBx">
           <img src="img/myphoto.webp" alt="Personal Image">
         </div>
@@ -176,8 +178,8 @@
             alt="Bg Cover"
             style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
     </picture>
-    <div class="container" data-aos="fade-down">
-      <div class="sec-content">
+    <div class="container">
+      <div class="sec-content" data-aos="zoom-in-up">
         <h4 class="sub-heading"><span class="icon-gem-regular"></span>My specializations</h4>
         <h3 class="heading">My Best Services</h3>
         <svg width=65 height=30 style=background:transparent;>
@@ -189,28 +191,28 @@
 
       <div class="sec-utilities">
         <div class="web-lang">
-          <div class="langBx">
+          <div class="langBx" data-aos="zoom-in" data-aos-delay="50">
             <div class="lang-content">
               <span class="icon-html5"></span>
               <h3>html5</h3>
             </div>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe ipsam natus eius!</p>
           </div>
-          <div class="langBx">
+          <div class="langBx" data-aos="zoom-in" data-aos-delay="100">
             <div class="lang-content">
               <span class="icon-css3"></span>
               <h3>css3</h3>
             </div>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe ipsam natus eius!</p>
           </div>
-          <div class="langBx">
+          <div class="langBx" data-aos="zoom-in" data-aos-delay="150">
             <div class="lang-content">
               <span class="icon-js-square"></span>
               <h3>javascript</h3>
             </div>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe ipsam natus eius!</p>
           </div>
-          <div class="langBx">
+          <div class="langBx" data-aos="zoom-in" data-aos-delay="200">
             <div class="lang-content">
               <span class="icon-bootstrap"></span>
               <h3>bootstrap5</h3>
@@ -401,6 +403,9 @@
   <div class="scrollToTop" id="scrollToTop">
     <span class="icon-chevron-up-solid"></span>
   </div>
+
+  <!-- AnimationOnScroll Library -->
+  <script src="js/aos.js"></script>
   <!-- Main Script File -->
   <script src="js/main.js"></script>
 </body>

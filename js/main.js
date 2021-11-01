@@ -374,18 +374,6 @@ let sliderContainer = document.querySelector(".slider-container");
 })(); // Self Invoked Function
 /** ------------------------------------------------------------------ **/
 
-/** Initialize AOS Library **/
-// (function() {
-//   AOS.init({
-//     duration: 700,
-//     offset: 200,
-//     mirror: false,
-//     once: false
-//   });
-//   window.addEventListener('load', AOS.refresh);
-// }());
-/** ------------------------------------------------------------------ **/
-
 /** Loader Functionality **/
 const loader = document.querySelector('.loader');
 window.addEventListener('load', () => {
@@ -413,4 +401,15 @@ scrollToTop.addEventListener('click', () => {
     behavior: 'smooth',
   });
 });
+/** ------------------------------------------------------------------ **/
+
+/** Initialize AOS Library **/
+(function() {
+  AOS.init({
+    duration: 800,
+    offset: 300,
+    once: false
+  });
+  window.addEventListener('load', AOS.refresh);
+}());
 /** ------------------------------------------------------------------ **/
