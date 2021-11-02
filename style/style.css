@@ -131,7 +131,7 @@ svg polyline {
 .navigation::-webkit-scrollbar {
   width: 0;
 }
-.navigation .content h3 {
+.navigation .nav-content h3 {
   letter-spacing: 1px;
   text-transform: uppercase;
 }
@@ -142,7 +142,7 @@ svg polyline {
   border-radius: 3px;
   box-shadow: 0 0 5px 2px rgb(0, 0, 0, 0.5);
 }
-.navigation img {
+.personal-img  img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -151,12 +151,13 @@ svg polyline {
   border-radius: 3px;
   pointer-events: none;
 }
-.navigation p {
+.nav-content p {
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.4;
   padding-bottom: 20px;
   border-bottom: 2px solid rgba(120, 120, 120, 0.8);
+  letter-spacing: 1px;
 }
 .close-toggle {
   position: absolute;
@@ -235,7 +236,29 @@ svg polyline {
   border-radius: 50%;
   box-shadow: 0 0 0 6px rgba(255, 255, 255, 0.5);
   margin-right: 20px;
-  z-index: 1;
+}
+.nav-social a::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -6px;
+  transform: translateY(-50%);
+  width: calc(100% + 12px);
+  height: 2px;
+  background: var(--main-color);
+  transform: rotate(45deg);
+  z-index: -1;
+}
+.nav-social a:hover::before {
+  animation: rotateLink 3s linear infinite;
+}
+@keyframes rotateLink {
+  0% {
+    transform: rotate(45deg);
+  }
+  100% {
+    transform: rotate(405deg);
+  }
 }
 /* End Navigation */
 
@@ -1079,6 +1102,30 @@ svg polyline {
   box-shadow: 0 0 0 6px rgb(255 255 255 / 25%);
   cursor: pointer;
   user-select: none;
+}
+#prevBtn::before,
+#nextBtn::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -6px;
+  transform: translateY(-50%);
+  width: calc(100% + 12px);
+  height: 2px;
+  background: var(--main-color);
+  z-index: -1;
+}
+#prevBtn:hover::before,
+#nextBtn:hover::before {
+  animation: rotateControl 3s linear infinite;
+}
+@keyframes rotateControl {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 /* End Testimonial Section */
 
