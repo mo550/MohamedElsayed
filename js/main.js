@@ -31,7 +31,9 @@ navLinks.forEach(link => {
     navigation.classList.remove("active");
   });
 });
-
+// allSections.forEach(sec => {
+//   console.log(`${sec.getAttribute('id')} Is ${sec.getBoundingClientRect().height}`);
+// })
 // Highlighting Function
 window.addEventListener('scroll', () => {
   let scrollPosition = document.documentElement.scrollTop;

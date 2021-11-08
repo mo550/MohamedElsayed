@@ -1323,28 +1323,31 @@ svg polyline {
 /* Start ScrollToTop */
 .scrollToTop {
   position: fixed;
-  right: 47px;
+  right: 50px;
   bottom: 500px;
   display: grid;
   place-items: center;
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   font-size: 20px;
   color: #FFF;
   background: var(--main-color);
   border-radius: 8px;
   z-index: 99999;
   cursor: pointer;
-  box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 0px 4px rgba(255, 255, 255, 0.25);
   transition: 0.7s;
   animation: scrollBtn 0.6s linear alternate infinite;
   opacity: 0;
   visibility: hidden;
 }
 .scrollToTop.active {
-  bottom: 25px;
+  bottom: 30px;
   opacity: 1;
   visibility: visible;
+}
+.scrollToTop:hover {
+  box-shadow: 0 0 8px 5px rgba(255, 255, 255, 0.25);
 }
 @keyframes scrollBtn {
   0% {
