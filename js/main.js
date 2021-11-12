@@ -413,3 +413,6 @@ scrollToTop.addEventListener('click', () => {
   window.addEventListener('load', AOS.refresh);
 }());
 /** ------------------------------------------------------------------ **/
+
+/** Intialise JQuery Smooth Scrolling **/
+$('a').smoothScroll();
