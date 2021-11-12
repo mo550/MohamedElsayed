@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200;300;400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200;300;400;500;600&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -33,13 +33,25 @@ html::-webkit-scrollbar-thumb {
 }
 body {
   font-family: "Gemunu Libre", sans-serif;
-  background: #FFF;
+  background: #fff;
 }
 section {
   position: relative;
   color: #fff;
   min-height: 100vh;
-  border-bottom: 2px solid var(--main-color);
+  border-bottom: 2px solid transparent;
+  border-image: 
+    linear-gradient(
+      to right,
+      rgb(69, 195, 255),
+      rgb(0, 136, 204),
+      rgb(127, 196, 0),
+      rgb(255, 200, 108),
+      rgb(255, 178, 30),
+      rgb(255, 77, 77),
+      rgb(100, 71, 182)
+    );
+  border-image-slice: 1;
 }
 .bg-cover::before {
   content: "";
@@ -142,7 +154,7 @@ svg polyline {
   border-radius: 3px;
   box-shadow: 0 0 5px 2px rgb(0, 0, 0, 0.5);
 }
-.personal-img  img {
+.personal-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -238,7 +250,7 @@ svg polyline {
   margin-right: 20px;
 }
 .nav-social a::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 50%;
   left: -6px;
@@ -325,7 +337,7 @@ svg polyline {
     width: 250px;
   }
   .color-scheme .logo img {
-    height: 90px
+    height: 90px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -333,7 +345,7 @@ svg polyline {
     width: 220px;
   }
   .color-scheme .logo img {
-    height: 70px
+    height: 70px;
   }
 }
 /* Start Color Schems */
@@ -649,7 +661,7 @@ svg polyline {
     height: 200px;
   }
 }
-@media screen and (max-width:420px) {
+@media screen and (max-width: 420px) {
   .about-imgBx {
     width: 100%;
     height: 180px;
@@ -916,7 +928,7 @@ svg polyline {
   position: relative;
   width: 230px;
   height: 300px;
-  background: #FFF;
+  background: #fff;
   border-radius: 15px;
   box-shadow: 0 0 25px 3px rgb(0, 0, 0, 0.15);
   background-size: cover;
@@ -936,7 +948,7 @@ svg polyline {
   letter-spacing: 1px;
 }
 .card-title::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 35px;
   left: 0;
@@ -949,7 +961,7 @@ svg polyline {
   z-index: 2;
 }
 .card-title::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 35px;
   left: 0;
@@ -965,7 +977,7 @@ svg polyline {
   transform: translateX(-50%);
   width: 170px;
   color: var(--main-color);
-  background: #FFF;
+  background: #fff;
   font-weight: 500;
   text-align: center;
   border-radius: 30px;
@@ -976,7 +988,7 @@ svg polyline {
   bottom: 60px;
 }
 .web-link:hover {
-  color: #FFF;
+  color: #fff;
   background: var(--main-color);
   letter-spacing: 1px;
 }
@@ -1106,7 +1118,7 @@ svg polyline {
 }
 #prevBtn::before,
 #nextBtn::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 50%;
   left: -6px;
@@ -1211,7 +1223,7 @@ svg polyline {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #FFF;
+  background-color: #fff;
   z-index: 999999;
   opacity: 1;
   transition: var(--main-transition);
@@ -1230,7 +1242,7 @@ svg polyline {
   border-radius: 5px;
   background-color: #1e3f57;
   transform-style: preserve-3d;
-  animation: dot1 3s cubic-bezier(.55,.3,.24,.99) infinite;
+  animation: dot1 3s cubic-bezier(0.55, 0.3, 0.24, 0.99) infinite;
 }
 
 .loader > .dot:nth-child(2) {
@@ -1256,19 +1268,22 @@ svg polyline {
 }
 
 @keyframes dot1 {
-  3%, 97% {
+  3%,
+  97% {
     width: 160px;
     height: 100px;
     margin-top: -50px;
     margin-left: -80px;
   }
-  30%, 36% {
+  30%,
+  36% {
     width: 80px;
     height: 120px;
     margin-top: -60px;
     margin-left: -40px;
   }
-  63%, 69% {
+  63%,
+  69% {
     width: 40px;
     height: 80px;
     margin-top: -40px;
@@ -1277,19 +1292,22 @@ svg polyline {
 }
 
 @keyframes dot2 {
-  3%, 97% {
+  3%,
+  97% {
     width: 150px;
     height: 90px;
     margin-top: -45px;
     margin-left: -75px;
   }
-  30%, 36% {
+  30%,
+  36% {
     width: 70px;
     height: 96px;
     margin-top: -48px;
     margin-left: -35px;
   }
-  63%, 69% {
+  63%,
+  69% {
     width: 32px;
     height: 60px;
     margin-top: -30px;
@@ -1298,20 +1316,23 @@ svg polyline {
 }
 
 @keyframes dot3 {
-  3%, 97% {
+  3%,
+  97% {
     width: 40px;
     height: 20px;
     margin-top: 50px;
     margin-left: -20px;
   }
-  30%, 36% {
+  30%,
+  36% {
     width: 8px;
     height: 8px;
     margin-top: 49px;
     margin-left: -5px;
     border-radius: 8px;
   }
-  63%, 69% {
+  63%,
+  69% {
     width: 16px;
     height: 4px;
     margin-top: -37px;
@@ -1331,7 +1352,7 @@ svg polyline {
   width: 35px;
   height: 35px;
   font-size: 20px;
-  color: #FFF;
+  color: #fff;
   background: var(--main-color);
   border-radius: 8px;
   z-index: 99999;
