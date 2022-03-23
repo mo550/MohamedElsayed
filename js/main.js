@@ -107,7 +107,7 @@ const colorScheme = document.querySelector(".color-scheme");
 const switcherBtn = document.querySelector(".switcher-btn");
 
 switcherBtn.addEventListener("click", () => {
-  colorScheme.classList.toggle("open");
+  colorScheme.classList.add("open");
 });
 
 /** Color Theme Functonality **/
@@ -118,6 +118,9 @@ document.querySelector(":root").style.setProperty("--main-color", localStorage.g
 
 themeColors.forEach((color) => {
   color.addEventListener("click", () => {
+    // Close Color Scheme when click any color
+    colorScheme.classList.remove("open");
+
     let dataColor = color.getAttribute("data-color");
     document.querySelector(":root").style.setProperty("--main-color", dataColor);
 
@@ -240,6 +243,15 @@ function displayMenuItems(menuItems) {
   // Appending Created MenuItems To Menu Container
   const menuContainer = document.querySelector(".menu-container");
   menuContainer.innerHTML = displayMenu;
+  let cards = menuContainer.querySelectorAll('.card');
+  cards.forEach((card) => {
+    card.addEventListener('click', () => {
+      cards.forEach((el) => {
+        el.classList.remove('active');
+      });
+      card.classList.add('active');
+    });
+  });
 
   // Triggering Preview Function
   previewPopup();
@@ -309,6 +321,7 @@ function previewPopup() {
   frameLoader = document.getElementById('frame-loader'),
   currentWebInd = document.querySelector('.current-web'),
   totalWebPages = document.querySelector('.total-web');
+
 
   // Set Websites Count Depending on previewBtns
   totalWebPages.innerHTML = previewBtns.length;

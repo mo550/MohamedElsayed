@@ -948,7 +948,8 @@ svg polyline {
   transform: scale(0);
   opacity: 0;
 }
-.card:hover .hover-items {
+.card:hover .hover-items,
+.card.active .hover-items {
   transform: scale(1);
   opacity: 0.9;
 }
