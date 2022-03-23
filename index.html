@@ -7,27 +7,34 @@
   <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
   <!-- FontAwsome File -->
   <link rel="stylesheet" href="style/font-icons.css">
-  <!-- AnimationOnScroll Style File -->
-  <link rel="stylesheet" href="style/aos.css">
+  <!-- PreLoader File -->
+  <link rel="stylesheet" href="style/preloader.css">
   <!-- Normalize Elements File -->
   <link rel="stylesheet" href="style/normalize.css">
   <!-- Style File -->
   <link rel="stylesheet" href="style/style.css">
   <title>Mohamed Elsayed</title>
 </head>
-<body>
+<ma>
   
   <!-- Start Header -->
   <header class="header">
-    <a class="logo" href="#">
+    <div class="logo">
       <img src="img/logo.png" alt="Logo">
-    </a>
-    <div class="social-link">
-      <a href="#"><span class="icon-facebook-f"></span></a>
-      <a href="#"><span class="icon-twitter-brands"></span></a>
-      <a href="#"><span class="icon-linkedin-in"></span></a>
-      <a href="#"><span class="icon-instagram"></span></a>
     </div>
+    <article>
+      <div class="social-link">
+        <a href="#"><span class="icon-facebook-f"></span></a>
+        <a href="#"><span class="icon-twitter-brands"></span></a>
+        <a href="#"><span class="icon-linkedin-in"></span></a>
+        <a href="#"><span class="icon-instagram"></span></a>
+      </div>
+      <div class="open-toggle" id="open-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </article>
   </header>
   <!-- End Header -->
 
@@ -44,15 +51,6 @@
       </div>
       <p>My name is Mohamed Elsayed From Egypt, I am a Front End Developer. My Experience in web development is over +2 years, I usually make Responsive websites, browser testing and debugging for clients which comply with latest web standard.</p>
     </div>
-    <ul class="navLinks">
-      <li><a href="#home" class="active">home</a></li>
-      <li><a href="#about">about</a></li>
-      <li><a href="#services">services</a></li>
-      <li><a href="#skills">skills</a></li>
-      <li><a href="#portfolio">portfolio</a></li>
-      <li><a href="#testimonial">reviews</a></li>
-      <li><a href="#contact">contact</a></li>
-    </ul>
     <div class="copyrights">
       All Copyrights&copy; Reserved<br>Coded by <span>Mohamed Elsayed</span>
     </div>
@@ -92,302 +90,311 @@
         <span class="theme-color" data-color="#CB9D6B" style="background: #CB9D6B;"></span>
       </div>
     </div>
-    <!-- <button class="reset">Reset All</button> -->
+    <button class="reset">Reset All</button>
   </article>
   <!-- End Color Schemes -->
 
   <!-- Start  NavPoints -->
-  <article class="nav-points">
-    <div class="open-toggle" id="open-toggle">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
+  <div class="side-nav">
     <ul class="nav-num">
-      <li><a class="active" href="#home">01</a></li>
-      <li><a href="#about">02</a></li>
-      <li><a href="#services">03</a></li>
-      <li><a href="#skills">04</a></li>
-      <li><a href="#portfolio">05</a></li>
-      <li><a href="#testimonial">06</a></li>
-      <li><a href="#contact">07</a></li>
+      <li data-id="home" class="active"><span class="icon-house-chimney-solid"></span></li>
+      <li data-id="about"><span class="icon-user-gear-solid"></span></li>
+      <li data-id="services"><span class="icon-laptop-code-solid"></span></li>
+      <li data-id="skills"><span class="icon-code-solid"></span></li>
+      <li data-id="portfolio"><span class="icon-briefcase-solid"></span></li>
+      <li data-id="testimonial"><span class="icon-quote-right-solid"></span></li>
+      <li data-id="contact"><span class="icon-envelope-open-text-solid"></span></li>
     </ul>
-  </article>
+  </div>
   <!-- End NavPoints -->
 
-  <!-- Start Home Section -->
-  <section class="home" id="home">
-    <picture class="bg-cover" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;">
-      <img src="img/home-large.webp"
-            srcset="img/home-large.webp 1635w, img/home-medium.webp 1280w, img/home-small.webp 640w"
-            sizes="100vw"
-            alt="Bg Cover"
-            style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
-    </picture>
-    <div class="content" data-aos="zoom-in" data-aos-duration="1200">
-      <h3><span class="icon-handshake-regular"></span> Hello There</h3>
-      <h1>Awesome solutions<br>for your bussiness</h1>
-      <svg width=65 height=30 style=background:transparent;>
-        <polyline points="0 25 6.25 18.75 12.5 25 18.75 18.75 25 25 31.25 18.75 37.5 25 43.75 18.75 50 25 56.25 18.75 62.5 25" fill=none stroke-width=3px></polyline>
-      </svg>
-      <div class="btns" style="margin-top: 40px;">
-        <a class="btn" href="https://www.upwork.com/freelancers/~017297b0812a000d6d">Start a project</a>
-        <a class="btn" href="#portfolio">See My Works</a>
-      </div>
-    </div>
-  </section>
-  <!-- End Home Section -->
-
-  <!-- Start About Section -->
-  <section class="about" id="about">
-    <picture class="bg-cover" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;">
-      <img src="img/about-large.webp"
-            srcset="img/about-large.webp 1920w, img/about-medium.webp 1280w, img/about-small.webp 640w"
-            alt="Bg Cover" 
-            style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
-    </picture>
-    <div class="hint"><span class="icon-question-circle-regular"></span>Who i'm</div>
-    <div class="container">
-      <div class="sec-content" data-aos="zoom-in">
-        <h3 class="heading">about me</h3>
-        <svg width=65 height=30 style=background:transparent;>
-          <polyline points="0 25 6.25 18.75 12.5 25 18.75 18.75 25 25 31.25 18.75 37.5 25 43.75 18.75 50 25 56.25 18.75 62.5 25" fill=none stroke-width=3px></polyline>
-        </svg>
-        <p class="txt">I have much experience in developing landing pages, online stores, coporate sites, home pages: experience in developing profitable business on the example of my clients, I know a lot of nuances that must a web site contain, and the element, which significantly affect the conversion.</p>
-        <div class="quality"><span class="icon-gem-regular"></span>My code always high quality, hand-coded</div>
-        <a href="https://mo550.github.io/My-CV/" target="_blank" class="btn">download my cv</a>
-      </div>
-
-      <div class="sec-utilities" data-aos="zoom-in" data-aos-delay="100">
-        <div class="about-imgBx">
-          <img src="img/myphoto.webp" alt="Personal Image">
+  <!-- Start Main Content -->
+  <main class="main-content">
+    <!-- Start Home Section -->
+    <section class="section home show" id="home">
+      <picture id="bg-cover" class="bg-cover" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;">
+        <img src="img/home.webp"
+              alt="Bg Cover"
+              style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
+      </picture>
+      <div class="container">
+        <div class="content">
+          <h3><span class="icon-handshake-regular"></span> Hello There</h3>
+          <h1>Awesome solutions<br>for your bussiness</h1>
+          <svg width=65 height=30 style=background:transparent;>
+            <polyline points="0 25 6.25 18.75 12.5 25 18.75 18.75 25 25 31.25 18.75 37.5 25 43.75 18.75 50 25 56.25 18.75 62.5 25" fill=none stroke-width=3px></polyline>
+          </svg>
+          <div class="btns" style="margin-top: 40px;">
+            <a class="btn" href="https://www.upwork.com/freelancers/~017297b0812a000d6d">Start a project</a>
+            <a class="btn" href="#portfolio">See My Works</a>
+          </div>
         </div>
-        <h2>+2 Years of Experience</h2>
       </div>
-    </div>
-  </section>
-  <!-- End About Section -->
+    </section>
+    <!-- End Home Section -->
 
-  <!-- Start Services Section -->
-  <section class="services" id="services">
-    <picture class="bg-cover" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;">
-      <img src="img/services-large.webp"
-            srcset="img/services-large.webp 1920w, img/services-large.webp , img/services-large.webp 640w"
-            alt="Bg Cover"
-            style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
-    </picture>
-    <div class="container">
-      <div class="sec-content" data-aos="zoom-in">
-        <h4 class="sub-heading"><span class="icon-gem-regular"></span>My specializations</h4>
-        <h3 class="heading">My Best Services</h3>
-        <svg width=65 height=30 style=background:transparent;>
-          <polyline points="0 25 6.25 18.75 12.5 25 18.75 18.75 25 25 31.25 18.75 37.5 25 43.75 18.75 50 25 56.25 18.75 62.5 25" fill=none stroke-width=3px></polyline>
-        </svg>
-        <p class="txt">In my work I using a variety of techniques and instruments<br> like: HTML5, CSS3, JavaScript (ES6), Responsive Design and BootStrap5<br> Framework. I'm using the latest technologies and the latest trends<br> in web development.</p>
-        <a href="https://www.upwork.com/freelancers/~017297b0812a000d6d" class="btn">Start A Project</a>
+    <!-- Start About Section -->
+    <section class="section about" id="about">
+      <picture class="bg-cover" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;">
+        <img src="img/about.webp"
+              sizes="100vw"
+              alt="Bg Cover" 
+              style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
+      </picture>
+      <div class="hint"><span class="icon-question-circle-regular"></span>Who i'm</div>
+      <div class="container">
+        <div class="sec-content">
+          <h3 class="heading">about me</h3>
+          <svg width=65 height=30 style=background:transparent;>
+            <polyline points="0 25 6.25 18.75 12.5 25 18.75 18.75 25 25 31.25 18.75 37.5 25 43.75 18.75 50 25 56.25 18.75 62.5 25" fill=none stroke-width=3px></polyline>
+          </svg>
+          <p class="txt">I have much experience in developing landing pages, online stores, coporate sites, home pages: experience in developing profitable business on the example of my clients, I know a lot of nuances that must a web site contain, and the element, which significantly affect the conversion.</p>
+          <div class="quality"><span class="icon-gem-regular"></span>My code always high quality, hand-coded</div>
+          <a href="https://mo550.github.io/My-CV/" target="_blank" class="btn">download my cv</a>
+        </div>
+
+        <div class="sec-utilities">
+          <div class="about-imgBx">
+            <img src="img/myphoto.webp" alt="Personal Image">
+          </div>
+          <h2>+2 Years of Experience</h2>
+        </div>
       </div>
+    </section>
+    <!-- End About Section -->
 
-      <div class="sec-utilities">
-        <div class="web-lang">
-          <div class="langBx" data-aos="zoom-in" data-aos-delay="50">
-            <div class="lang-content">
-              <span class="icon-html5"></span>
-              <h3>html5</h3>
+    <!-- Start Services Section -->
+    <section class="section services" id="services">
+      <picture class="bg-cover" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;">
+        <img src="img/services.webp"
+              alt="Bg Cover"
+              style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
+      </picture>
+      <div class="container">
+        <div class="sec-content">
+          <h4 class="sub-heading"><span class="icon-gem-regular"></span>My specializations</h4>
+          <h3 class="heading">My Best Services</h3>
+          <svg width=65 height=30 style=background:transparent;>
+            <polyline points="0 25 6.25 18.75 12.5 25 18.75 18.75 25 25 31.25 18.75 37.5 25 43.75 18.75 50 25 56.25 18.75 62.5 25" fill=none stroke-width=3px></polyline>
+          </svg>
+          <p class="txt">In my work I using a variety of techniques and instruments<br> such as: HTML5, CSS3, JavaScript (ES6), Responsive Design and BootStrap5<br> Framework. I'm using the latest technologies and the latest trends<br> in web development.</p>
+          <a href="https://www.upwork.com/freelancers/~017297b0812a000d6d" class="btn">Start A Project</a>
+        </div>
+
+        <div class="sec-utilities">
+          <div class="web-lang">
+            <div class="langBx">
+              <div class="lang-content">
+                <span class="icon-html5"></span>
+                <h3>html5</h3>
+              </div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe ipsam natus eius!</p>
             </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe ipsam natus eius!</p>
-          </div>
-          <div class="langBx" data-aos="zoom-in" data-aos-delay="100">
-            <div class="lang-content">
-              <span class="icon-css3"></span>
-              <h3>css3</h3>
+            <div class="langBx">
+              <div class="lang-content">
+                <span class="icon-css3"></span>
+                <h3>css3</h3>
+              </div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe ipsam natus eius!</p>
             </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe ipsam natus eius!</p>
-          </div>
-          <div class="langBx" data-aos="zoom-in" data-aos-delay="50">
-            <div class="lang-content">
-              <span class="icon-js-square"></span>
-              <h3>javascript</h3>
+            <div class="langBx">
+              <div class="lang-content">
+                <span class="icon-js-square"></span>
+                <h3>javascript</h3>
+              </div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe ipsam natus eius!</p>
             </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe ipsam natus eius!</p>
-          </div>
-          <div class="langBx" data-aos="zoom-in" data-aos-delay="100">
-            <div class="lang-content">
-              <span class="icon-bootstrap"></span>
-              <h3>bootstrap5</h3>
-            </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe ipsam natus eius!</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End Services Section -->
-
-  <!-- Start Skills Section -->
-  <section class="skills" id="skills">
-    <picture class="bg-cover" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;">
-      <img src="img/skills-large.webp"
-            srcset="img/skills-large.webp 1920w, img/skills-medium.webp 1280w, img/skills-small.webp 640w"
-            alt="Bg Cover" 
-            style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
-    </picture>
-    <div class="hint"><span class="icon-code-solid"></span>What i do</div>
-    <div class="container">
-      <div class="sec-content" data-aos="zoom-in">
-        <h3 class="heading">My Skills</h3>
-        <svg width=65 height=30 style=background:transparent;>
-          <polyline points="0 25 6.25 18.75 12.5 25 18.75 18.75 25 25 31.25 18.75 37.5 25 43.75 18.75 50 25 56.25 18.75 62.5 25" fill=none stroke-width=3px></polyline>
-        </svg>
-        <p class="txt">I do my job well and on tine - is unshakable prenciple is more important<br>than which can not be even money.<br><span>Just check my portfolio and let's work together!</span></p>
-        <ul class="what-iDo">
-          <li>01 <span>-</span> landing page integration</li>
-          <li>02 <span>-</span> psd to html responsive</li>
-          <li>03 <span>-</span> seo optimization</li>
-          <li>04 <span>-</span> fully responsive design</li>
-        </ul>
-      </div>
-
-      <div class="sec-utilities" data-aos="zoom-in" data-aos-delay="100">
-        <div class="skills-progress">
-          <div class="skills-lang">
-            <h5>html5 / css3</h5>
-            <h5>90%</h5>
-          </div>
-          <div class="progress-bar">
-            <span data-width="90"></span>
-          </div>
-        </div>
-
-        <div class="skills-progress">
-          <div class="skills-lang">
-            <h5>JavaScript, ES6</h5>
-            <h5>80%</h5>
-          </div>
-          <div class="progress-bar">
-            <span data-width="80"></span>
-          </div>
-        </div>
-
-        <div class="skills-progress">
-          <div class="skills-lang">
-            <h5>BootStrap5</h5>
-            <h5>75%</h5>
-          </div>
-          <div class="progress-bar">
-            <span data-width="75"></span>
-          </div>
-        </div>
-
-        <div class="skills-progress">
-          <div class="skills-lang">
-            <h5>Coding</h5>
-            <h5>85%</h5>
-          </div>
-          <div class="progress-bar">
-            <span data-width="85"></span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End Skills Section -->
-
-  <!-- Start Portfolio Section -->
-  <section class="portfolio" id="portfolio">
-    <picture class="bg-cover" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;">
-      <img src="img/portfolio-large.webp"
-            alt="Bg Cover"
-            style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
-    </picture>
-    <div class="hint"><span class="icon-rocket-solid"></span>my lastest best works</div>
-    <div class="container">
-      <div class="menu-btns"></div>
-      <div class="menu-container" data-aos="zoom-in"></div>
-    </div>
-  </section>
-  <!-- End Portfolio Section -->
-
-  <!-- Start Testimonials Section -->
-  <section class="testimonial" id="testimonial">
-    <picture class="bg-cover" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;">
-      <img src="img/testimonial-large.webp"
-            srcset="img/testimonial-large.webp 1920w, img/testimonial-medium.webp 1280w, img/testimonial-small.webp 640w"
-            alt="Bg Cover"
-            style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
-    </picture>
-    <div class="hint"><span class="icon-comment-dots-regular"></span>clients say about me</div>
-    <div class="container">
-      <div class="heading-content">
-        <h3 class="heading">Testimonials</h3>
-        <svg width=65 height=30 style=background:transparent;>
-          <polyline points="0 25 6.25 18.75 12.5 25 18.75 18.75 25 25 31.25 18.75 37.5 25 43.75 18.75 50 25 56.25 18.75 62.5 25" fill=none stroke-width=3px></polyline>
-        </svg>
-      </div>
-      <div class="slider-content">
-        <div class="slider-container" data-aos="zoom-in"></div>
-        <div class="controls">
-          <div id="prevBtn"><span class="icon-angle-double-left-solid"></span></div>
-          <ul class="indicators"></ul>
-          <div id="nextBtn"><span class="icon-angle-double-right-solid"></span></div>
-        </div>
-      </div>
-    </div>  
-  </section>
-  <!-- End Testimonials Section -->
-
-  <!-- Start Contact Section -->
-  <section class="contact" id="contact">
-    <picture class="bg-cover" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;">
-      <img src="img/contact-large.webp"
-            srcset="img/contact-large.webp 1920w, img/contact-medium.webp 1280w, img/contact-small.webp 640w"
-            alt="Bg Cover"
-            style="width: 100%; height: 100%; object-fit: cover; object-position: center;" />
-    </picture>
-    <div class="hint"><span class="icon-bell-regular"></span>contact with me</div>
-    <div class="container">
-      <div class="sec-content" data-aos="zoom-in">
-        <h3 class="heading">Say Hello</h3>
-        <svg width=65 height=30 style=background:transparent;>
-          <polyline points="0 25 6.25 18.75 12.5 25 18.75 18.75 25 25 31.25 18.75 37.5 25 43.75 18.75 50 25 56.25 18.75 62.5 25" fill=none stroke-width=3px></polyline>
-        </svg>
-        <div class="contact-info">
-          <div class="infoBx">
-            <div class="icon"><span class="icon-phone-alt-solid"></span></div>
-            <div class="info">
-              <h3>call me anytime</h3>
-              <span>+02-1129911439</span>
-            </div>
-          </div>
-          <div class="infoBx">
-            <div class="icon"><span class="icon-envelope-solid"></span></div>
-            <div class="info">
-              <h3>email me</h3>
-              <span>mohamed.elsayed969696@gmail.com</span>
-            </div>
-          </div>
-          <div class="infoBx">
-            <div class="icon"><span class="icon-home-solid"></span></div>
-            <div class="info">
-              <h3>address</h3>
-              <span>Mansoura - Dakahlia, Egypt</span>
+            <div class="langBx">
+              <div class="lang-content">
+                <span class="icon-bootstrap"></span>
+                <h3>bootstrap5</h3>
+              </div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe ipsam natus eius!</p>
             </div>
           </div>
         </div>
       </div>
+    </section>
+    <!-- End Services Section -->
 
-      <div class="sec-utilities" data-aos="zoom-in" data-aos-delay="100">
-        <form action="" class="form">
-          <div class="input-field">
-            <input type="text" name="name" id="" placeholder="Your Name *">
-            <input type="email" name="email" id="" placeholder="Your Email *">
+    <!-- Start Skills Section -->
+    <section class="section skills" id="skills">
+      <picture class="bg-cover" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;">
+        <img src="img/skills.webp"
+              alt="Bg Cover" 
+              style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
+      </picture>
+      <div class="hint"><span class="icon-code-solid"></span>What i do</div>
+      <div class="container">
+        <div class="sec-content">
+          <h3 class="heading">My Skills</h3>
+          <svg width=65 height=30 style=background:transparent;>
+            <polyline points="0 25 6.25 18.75 12.5 25 18.75 18.75 25 25 31.25 18.75 37.5 25 43.75 18.75 50 25 56.25 18.75 62.5 25" fill=none stroke-width=3px></polyline>
+          </svg>
+          <p class="txt">I do my job well and on tine - is unshakable prenciple is more important<br>than which can not be even money.<br><span>Just check my portfolio and let's work together!</span></p>
+          <ul class="what-iDo">
+            <li>01 <span>-</span> landing page integration</li>
+            <li>02 <span>-</span> psd to html responsive</li>
+            <li>03 <span>-</span> seo optimization</li>
+            <li>04 <span>-</span> fully responsive design</li>
+          </ul>
+        </div>
+
+        <div class="sec-utilities">
+          <div class="skills-progress">
+            <div class="skills-lang">
+              <h5>html5 / css3</h5>
+              <h5>90%</h5>
+            </div>
+            <div class="progress-bar">
+              <span data-width="90"></span>
+            </div>
           </div>
-          <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message *"></textarea>
-          <input class="btn" type="submit" value="send a massage" style="cursor: pointer;">
-        </form>
+
+          <div class="skills-progress">
+            <div class="skills-lang">
+              <h5>JavaScript, ES6</h5>
+              <h5>80%</h5>
+            </div>
+            <div class="progress-bar">
+              <span data-width="80"></span>
+            </div>
+          </div>
+
+          <div class="skills-progress">
+            <div class="skills-lang">
+              <h5>BootStrap5</h5>
+              <h5>75%</h5>
+            </div>
+            <div class="progress-bar">
+              <span data-width="75"></span>
+            </div>
+          </div>
+
+          <div class="skills-progress">
+            <div class="skills-lang">
+              <h5>Coding</h5>
+              <h5>85%</h5>
+            </div>
+            <div class="progress-bar">
+              <span data-width="85"></span>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
-  <!-- End Contact Section -->
+    </section>
+    <!-- End Skills Section -->
+
+    <!-- Start Portfolio Section -->
+    <main>
+      <section class="section portfolio" id="portfolio">
+        <picture class="bg-cover" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;">
+          <img src="img/portfolios"
+                alt="Bg Cover"
+                style="width: 100%; height: 100%; object-fit: cover; object-position: center;" />
+        </picture>
+        <div class="hint"><span class="icon-rocket-solid"></span>my lastest best works</div>
+        <div class="container">
+          <div class="menu-btns"></div>
+          <div class="menu-container"></div>
+        </div>
+      </section>
+      <!-- Website Preview -->
+      <div class="preview-popup">
+        <div class="preview-header">
+          <p>Website <span class="current-web">1</span> of <span class="total-web">6</span></p>
+          <span id="close-preview" class="icon-xmark-solid"></span>
+        </div>
+        <div class="website-preview">
+          <iframe id="website-frame" src=""></iframe>
+          <div id="frame-loader">Loading...</div>
+        </div>
+      </div>
+      <!-- Website Preview -->
+    </main>
+    <!-- End Portfolio Section -->
+
+    <!-- Start Testimonials Section -->
+    <section class="section testimonial" id="testimonial">
+      <picture class="bg-cover" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;">
+        <img src="img/testimonials.webp"
+              alt="Bg Cover"
+              style="width: 100%; height: 100%; object-fit: cover; object-position: center;" />
+      </picture>
+      <div class="hint"><span class="icon-comment-dots-regular"></span>clients say about me</div>
+      <div class="container">
+        <div class="heading-content">
+          <h3 class="heading">Testimonials</h3>
+          <svg width=65 height=30 style=background:transparent;>
+            <polyline points="0 25 6.25 18.75 12.5 25 18.75 18.75 25 25 31.25 18.75 37.5 25 43.75 18.75 50 25 56.25 18.75 62.5 25" fill=none stroke-width=3px></polyline>
+          </svg>
+        </div>
+        <div class="slider-content">
+          <div class="slider-container"></div>
+          <div class="controls">
+            <div id="prevBtn"><span class="icon-angle-double-left-solid"></span></div>
+            <ul class="indicators"></ul>
+            <div id="nextBtn"><span class="icon-angle-double-right-solid"></span></div>
+          </div>
+        </div>
+      </div>  
+    </section>
+    <!-- End Testimonials Section -->
+
+    <!-- Start Contact Section -->
+    <section class="section contact" id="contact">
+      <picture class="bg-cover" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;">
+        <img src="img/contact"
+              alt="Bg Cover"
+              style="width: 100%; height: 100%; object-fit: cover; object-position: center;" />
+      </picture>
+      <div class="hint"><span class="icon-bell-regular"></span>contact with me</div>
+      <div class="container">
+        <div class="sec-content">
+          <h3 class="heading">Say Hello</h3>
+          <svg width=65 height=30 style=background:transparent;>
+            <polyline points="0 25 6.25 18.75 12.5 25 18.75 18.75 25 25 31.25 18.75 37.5 25 43.75 18.75 50 25 56.25 18.75 62.5 25" fill=none stroke-width=3px></polyline>
+          </svg>
+          <div class="contact-info">
+            <div class="infoBx">
+              <div class="icon"><span class="icon-phone-alt-solid"></span></div>
+              <div class="info">
+                <h3>call me anytime</h3>
+                <span>+02-1129911439</span>
+              </div>
+            </div>
+            <div class="infoBx">
+              <div class="icon"><span class="icon-envelope-solid"></span></div>
+              <div class="info">
+                <h3>email me</h3>
+                <span>mohamed.elsayed969696@gmail.com</span>
+              </div>
+            </div>
+            <div class="infoBx">
+              <div class="icon"><span class="icon-house-chimney-solid"></span></div>
+              <div class="info">
+                <h3>address</h3>
+                <span>Mansoura - Dakahlia, Egypt</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sec-utilities">
+          <form class="form">
+            <div class="input-field">
+              <input type="text" name="name" id="" placeholder="Your Name *">
+              <input type="email" name="email" id="" placeholder="Your Email *">
+            </div>
+            <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message *"></textarea>
+            <input class="btn" type="submit" value="send a massage" style="cursor: pointer;">
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- End Contact Section -->
+  </main>
+  <!-- End Main Content -->
 
   <!-- Start Loader -->
   <div class="loader">
@@ -397,13 +404,6 @@
   </div>
   <!-- End Loader -->
 
-  <!-- ScrollToTop Button -->
-  <div class="scrollToTop" id="scrollToTop">
-    <span class="icon-chevron-up-solid"></span>
-  </div>
-
-  <!-- AnimationOnScroll Library -->
-  <script src="js/aos.js"></script>
   <!-- Main Script File -->
   <script src="js/main.js"></script>
 </body>
