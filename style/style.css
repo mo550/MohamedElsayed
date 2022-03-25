@@ -410,7 +410,6 @@ svg polyline {
   margin-right: auto;
   overflow: hidden;
 }
-
 /* SMALL Screens */
 @media (min-width: 768px) {
   .container {
@@ -443,16 +442,10 @@ svg polyline {
   text-transform: uppercase;
   letter-spacing: 2px;
 }
-@media screen and (max-width: 767px) {
-  .hint {
-    display: none;
-  }
-}
 .hint span {
   color: var(--main-color);
   margin-right: 10px;
 }
-
 .sec-content,
 .sec-utilities {
   width: 48%;
@@ -522,6 +515,14 @@ svg polyline {
     width: 90%;
   }
 }
+@media screen and (max-width: 767px) {
+  .container {
+    justify-content: center;
+  }
+  .hint {
+    display: none;
+  }
+}
 /* End Section Common Style Component */
 
 /* Start Home Section */
@@ -578,7 +579,6 @@ svg polyline {
 /* End Home Section */
 
 /* Start About Section */
-
 .about .quality {
   font-size: 18px;
   text-transform: uppercase;
@@ -673,9 +673,6 @@ svg polyline {
 /* End About Section */
 
 /* Start Services Section */
-.services .container {
-  align-items: center;
-}
 .web-lang {
   width: 100%;
   display: grid;
@@ -1082,35 +1079,21 @@ svg polyline {
   left: -52px;
 }
 .testimonial .container {
-  flex-direction: column;
-}
-.testimonial .heading-content {
-  width: 100%;
-  font-size: 35px;
-}
-.slider-content {
-  width: 100%;
-  min-height: 50vh;
+  display: block;
 }
 .slider-container {
   position: relative;
-  width: 100%;
-  min-height: inherit;
+  min-height: 300px;
   padding-top: 35px;
   margin-top: 35px;
   overflow: hidden;
 }
-@media screen and (max-width: 565px) {
-  .slider-content {
-    min-height: 60vh;
+@media screen and (max-width: 450px) {
+  .slider-container {
+    min-height: 360px;
   }
 }
-@media screen and (max-width: 420px) {
-  .slider-content {
-    min-height: 67vh;
-  }
-}
-.slide {
+.slider-container .slide {
   width: 100%;
   position: absolute;
   background: #fff;
@@ -1120,7 +1103,7 @@ svg polyline {
   box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.05);
   transition: all 0.3s ease-in-out;
 }
-.slide .quote {
+.slider-container .slide .quote {
   position: absolute;
   top: 0px;
   right: 10px;
@@ -1131,20 +1114,20 @@ svg polyline {
   opacity: 0.3;
   z-index: -1;
 }
-.slide .client-img {
+.slider-container .slide .client-img {
   position: absolute;
   height: 70px;
   top: -35px;
 }
-.slide .stars {
+.slider-container .slide .stars {
   color: #aebb14;
 }
-.slide .client-name {
+.slider-container .slide .client-name {
   color: #333;
   margin: 10px 0;
   letter-spacing: 2px;
 }
-.slide q {
+.slider-container .slide q {
   color: #444;
   font-weight: 500;
   line-height: 1.4;
