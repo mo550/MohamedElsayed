@@ -1,8 +1,8 @@
 /** Navigation Functionality **/
+let header = document.querySelector('.header');
 let openToggle = document.getElementById("open-toggle");
 let closeToggle = document.getElementById("close-toggle");
-const navigation = document.querySelector(".navigation");
-let header = document.querySelector('.header');
+let navigation = document.getElementById("navigation");
 
 openToggle.addEventListener("click", () => {
   navigation.classList.add("active");
@@ -26,6 +26,34 @@ window.addEventListener('scroll', () => {
     header.style.background = "transparent";
   }
 })
+/** ------------------------------------------------------------------ **/
+
+/** Displaying Color Scheme **/
+const colorScheme = document.getElementById("color-scheme");
+const switcherBtn = document.querySelector(".switcher-btn");
+
+switcherBtn.addEventListener("click", () => {
+  colorScheme.classList.toggle("open");
+});
+
+/** Color Theme Functonality **/
+const themeColors = document.querySelectorAll(".theme-color");
+
+// Add Default Local Storage Class on Body (2)
+document.querySelector(":root").style.setProperty("--main-color", localStorage.getItem("pageColor"));
+
+themeColors.forEach((color) => {
+  color.addEventListener("click", () => {
+    // Close Color Scheme when click any color
+    colorScheme.classList.remove("open");
+
+    let dataColor = color.getAttribute("data-color");
+    document.querySelector(":root").style.setProperty("--main-color", dataColor);
+
+    // Add Data To Local Storage (1)
+    localStorage.setItem("pageColor", dataColor);
+  });
+});
 /** ------------------------------------------------------------------ **/
 
 /** Switching between sections Functionality **/
@@ -100,34 +128,6 @@ allLis.forEach((li) => {
 //     }
 //   });
 // });
-/** ------------------------------------------------------------------ **/
-
-/** Displaying Color Scheme **/
-const colorScheme = document.querySelector(".color-scheme");
-const switcherBtn = document.querySelector(".switcher-btn");
-
-switcherBtn.addEventListener("click", () => {
-  colorScheme.classList.toggle("open");
-});
-
-/** Color Theme Functonality **/
-const themeColors = document.querySelectorAll(".theme-color");
-
-// Add Default Local Storage Class on Body (2)
-document.querySelector(":root").style.setProperty("--main-color", localStorage.getItem("pageColor"));
-
-themeColors.forEach((color) => {
-  color.addEventListener("click", () => {
-    // Close Color Scheme when click any color
-    colorScheme.classList.remove("open");
-
-    let dataColor = color.getAttribute("data-color");
-    document.querySelector(":root").style.setProperty("--main-color", dataColor);
-
-    // Add Data To Local Storage (1)
-    localStorage.setItem("pageColor", dataColor);
-  });
-});
 /** ------------------------------------------------------------------ **/
 
 /** Menu Items Functionality **/
