@@ -243,6 +243,8 @@ function displayMenuItems(menuItems) {
   // Appending Created MenuItems To Menu Container
   const menuContainer = document.querySelector(".menu-container");
   menuContainer.innerHTML = displayMenu;
+
+  // Add active class on clicked card
   let cards = menuContainer.querySelectorAll('.card');
   cards.forEach((card) => {
     card.addEventListener('click', () => {
@@ -253,7 +255,7 @@ function displayMenuItems(menuItems) {
     });
   });
 
-  // Triggering Preview Function
+  // Triggering PreviewPopup Function
   previewPopup();
 }
 

@@ -687,7 +687,7 @@ svg polyline {
   border-radius: 3px;
   text-align: center;
   padding: 20px;
-  border: 1px solid #212e35;
+  border: 1px solid #212e35be;
   box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: all 0.3s cubic-bezier(0.38, 1.15, 0.7, 1.12);
@@ -695,7 +695,6 @@ svg polyline {
 .langBx:hover {
   border: 1px solid var(--main-color);
   transform: translateY(-5px) !important;
-  box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.32);
 }
 .langBx span {
   color: var(--main-color);
