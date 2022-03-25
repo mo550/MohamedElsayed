@@ -391,6 +391,7 @@ svg polyline {
   transform: translateY(-100%);
   transition: transform 0.7s ease-in-out;
   z-index: 1;
+  overflow: hidden;
 }
 .section.show {
   transform: translateY(0);
@@ -571,7 +572,7 @@ svg polyline {
 }
 @media screen and (max-width: 420px) {
   .home .content h1 {
-    font-size: 2.1rem;
+    font-size: 2rem;
   }
 }
 /* End Home Section */
@@ -1091,11 +1092,6 @@ svg polyline {
   width: 100%;
   min-height: 50vh;
 }
-@media screen and (max-width: 565px) {
-  .slider-content {
-    min-height: 68vh;
-  }
-}
 .slider-container {
   position: relative;
   width: 100%;
@@ -1103,6 +1099,16 @@ svg polyline {
   padding-top: 35px;
   margin-top: 35px;
   overflow: hidden;
+}
+@media screen and (max-width: 565px) {
+  .slider-content {
+    min-height: 60vh;
+  }
+}
+@media screen and (max-width: 420px) {
+  .slider-content {
+    min-height: 67vh;
+  }
 }
 .slide {
   width: 100%;

@@ -28,7 +28,7 @@ window.addEventListener('scroll', () => {
 })
 /** ------------------------------------------------------------------ **/
 
-/** Switching betwen sections Functionality **/
+/** Switching between sections Functionality **/
 const allSections = document.querySelectorAll('.section');
 const allLis = document.querySelectorAll(".nav-num li");
 
@@ -107,7 +107,7 @@ const colorScheme = document.querySelector(".color-scheme");
 const switcherBtn = document.querySelector(".switcher-btn");
 
 switcherBtn.addEventListener("click", () => {
-  colorScheme.classList.add("open");
+  colorScheme.classList.toggle("open");
 });
 
 /** Color Theme Functonality **/
