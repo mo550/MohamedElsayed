@@ -844,6 +844,7 @@ svg polyline {
 }
 .portfolio .box-hint {
   font-size: 18px;
+  text-align: center;
   margin: 25px auto;
 }
 .portfolio .box-hint span {
