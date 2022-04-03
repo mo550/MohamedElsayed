@@ -56,7 +56,7 @@ themeColors.forEach((color) => {
 });
 /** ------------------------------------------------------------------ **/
 
-/** Switching between sections Functionality **/
+/** Switching Between Sections Functionality **/
 const allSections = document.querySelectorAll('.section');
 const allLis = document.querySelectorAll(".nav-num li");
 

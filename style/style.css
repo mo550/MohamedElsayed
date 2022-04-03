@@ -500,7 +500,7 @@ svg polyline {
   display: inline-block;
   color: #fff;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 500;
   background-color: var(--main-color);
   border-radius: 20px;
   padding: 10px 25px;
@@ -508,6 +508,10 @@ svg polyline {
   text-transform: uppercase;
   box-shadow: 0 0.5rem 1rem rgba(63, 44, 44, 0.1);
   transition: var(--main-transition);
+}
+.btn:hover {
+  color: var(--main-color);
+  background: #FFF;
 }
 @media screen and (max-width: 991px) {
   .sec-content,
@@ -544,16 +548,7 @@ svg polyline {
   margin: 20px 0;
 }
 .home .btn {
-  font-weight: 500;
-  margin: 0 15px;
-}
-.home .btn:nth-child(2) {
-  color: #333;
-  background-color: #fff;
-}
-.home .btn:nth-child(2):hover {
-  color: #fff;
-  background-color: var(--main-color);
+  margin: 0 auto;
 }
 @media screen and (max-width: 991px) {
   .home .content h1 {
@@ -561,12 +556,6 @@ svg polyline {
   }
 }
 @media screen and (max-width: 767px) {
-  .home .btn {
-    display: block;
-  }
-  .home .btns a:nth-child(1) {
-    margin-bottom: 10px;
-  }
   .home .content h1 {
     font-size: 2.5rem;
   }
@@ -853,6 +842,15 @@ svg polyline {
   left: -65px;
   z-index: 1000;
 }
+.portfolio .box-hint {
+  font-size: 18px;
+  margin: 25px auto;
+}
+.portfolio .box-hint span {
+  font-size: 16px;
+  color: var(--main-color);
+  margin: 0 5px;
+}
 .menu-btns {
   position: relative;
   width: fit-content;
@@ -910,7 +908,6 @@ svg polyline {
   align-items: center;
   flex-wrap: wrap;
   grid-gap: 1.5rem;
-  margin-top: 35px;
 }
 .menu-container .card {
   position: relative;
