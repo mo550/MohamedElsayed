@@ -377,13 +377,13 @@
         </div>
 
         <div class="sec-utilities">
-          <form class="form">
+          <form class="form" action="./contact_form.php" method="post">
             <div class="input-field">
-              <input type="text" name="name" id="" placeholder="Your Name *">
-              <input type="email" name="email" id="" placeholder="Your Email *">
+              <input type="text" name="name" placeholder="Your Name *">
+              <input type="email" name="email" placeholder="Your Email *">
             </div>
-            <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message *"></textarea>
-            <input class="btn" type="submit" value="send a massage" style="cursor: pointer;">
+            <textarea name="message" cols="30" rows="10" placeholder="Your Message *"></textarea>
+            <input class="btn" type="submit" value="send a massage" style="cursor: pointer;" name="send_a_msg">
           </form>
         </div>
       </div>
